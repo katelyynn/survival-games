@@ -21,3 +21,5 @@ execute as @e[tag=r3] at @s run loot insert ~ ~-2 ~ loot hungergames:chests/diam
 
 # 4
 execute as @e[tag=r4] at @s run loot insert ~ ~-2 ~ loot hungergames:chests/netherite
+
+title @a actionbar {"text":"LOOTED ALL CHESTS!","color":"green","bold":true}
