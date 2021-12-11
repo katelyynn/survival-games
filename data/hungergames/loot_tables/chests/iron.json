@@ -1,0 +1,63 @@
+{
+    "pools": [
+      {
+        "rolls": 8,
+        "bonus_rolls": 2,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "weight": 54,
+            "name": "minecraft:chainmail_chestplate"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 35,
+            "name": "minecraft:leather_leggings"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 55,
+            "name": "minecraft:leather_chestplate"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 65,
+            "name": "minecraft:apple"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 28,
+            "name": "minecraft:golden_apple",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 1,
+                "conditions": [
+                  {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.5
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 11,
+            "name": "minecraft:wooden_sword"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 36,
+            "name": "minecraft:stone_axe"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 23,
+            "name": "minecraft:stone_sword"
+          }
+        ]
+      }
+    ]
+  }
+  
