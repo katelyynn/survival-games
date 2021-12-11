@@ -1,3 +1,7 @@
+# HUNGER GAMES SCANNING
+# For moving on the x axis
+
+
 # if chest is found
 execute as @e[tag=scan,limit=1] at @s if block ~ 50 ~ #hungergames:chest_loot run function hungergames:identify_chest
 

@@ -1,3 +1,7 @@
+# HUNGER GAMES SCANNING
+# For moving on the y axis
+
+
 # if chest is found
 execute as @e[tag=scan,limit=1] at @s if block ~ ~ ~ chest run function hungergames:found_chest
 

@@ -1,3 +1,6 @@
+# HUNGER GAMES MAIN LOOP
+
+
 # SCANNING
 execute if score scanning internal matches 1 run function hungergames:scanning
 

@@ -1,0 +1,83 @@
+{
+    "pools": [
+      {
+        "rolls": 6,
+        "bonus_rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "weight": 34,
+            "name": "minecraft:stone_sword"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 23,
+            "name": "minecraft:iron_boots"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 38,
+            "name": "minecraft:iron_helmet"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 35,
+            "name": "minecraft:golden_apple"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 43,
+            "name": "minecraft:apple",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 2,
+                "conditions": [
+                  {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.5
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 14,
+            "name": "minecraft:leather_boots"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 24,
+            "name": "minecraft:iron_leggings"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 39,
+            "name": "minecraft:chainmail_chestplate"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 35,
+            "name": "minecraft:iron_chestplate"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 15,
+            "name": "minecraft:leather_helmet"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 37,
+            "name": "minecraft:iron_sword"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 20,
+            "name": "minecraft:iron_axe"
+          }
+        ]
+      }
+    ]
+  }
+  
