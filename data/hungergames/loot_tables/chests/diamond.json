@@ -106,12 +106,17 @@
       "entries": [
         {
           "type": "minecraft:item",
+          "weight": 40,
+          "name": "minecraft:iron_leggings"
+        },
+        {
+          "type": "minecraft:item",
           "weight": 5,
           "name": "minecraft:golden_leggings"
         },
         {
           "type": "minecraft:item",
-          "weight": 83,
+          "weight": 43,
           "name": "minecraft:iron_leggings",
           "functions": [
             {
@@ -156,11 +161,11 @@
       "entries": [
         {
           "type": "minecraft:empty",
-          "weight": 10
+          "weight": 20
         },
         {
           "type": "minecraft:item",
-          "weight": 70,
+          "weight": 60,
           "name": "minecraft:iron_axe"
         },
         {
@@ -174,12 +179,17 @@
       "rolls": 1,
       "entries": [
         {
+          "type": "minecraft:item",
+          "weight": 30,
+          "name": "minecraft:iron_chestplate"
+        },
+        {
           "type": "minecraft:empty",
-          "weight": 5
+          "weight": 15
         },
         {
           "type": "minecraft:item",
-          "weight": 75,
+          "weight": 35,
           "name": "minecraft:iron_chestplate",
           "functions": [
             {
