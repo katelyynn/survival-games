@@ -7,3 +7,6 @@ execute if score scanning internal matches 1 run title @a actionbar {"text":"SCA
 
 # DEBUG
 execute if score debug internal matches 1 run function hungergames:debug
+
+# TNT
+function hungergames:tnt
