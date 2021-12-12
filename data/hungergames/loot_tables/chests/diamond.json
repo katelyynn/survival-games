@@ -1,0 +1,107 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:empty",
+            "weight": 40
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 20,
+            "name": "minecraft:totem_of_undying"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 40,
+            "name": "minecraft:experience_bottle",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 3,
+                  "max": 10
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "weight": 5,
+            "name": "minecraft:golden_leggings"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 80,
+            "name": "minecraft:iron_leggings"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 15,
+            "name": "minecraft:diamond_leggings"
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "weight": 30,
+            "name": "minecraft:crossbow"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 30,
+            "name": "minecraft:fishing_rod"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 40,
+            "name": "minecraft:bow"
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:empty",
+            "weight": 10
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 70,
+            "name": "minecraft:iron_axe"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 20,
+            "name": "minecraft:diamond_axe"
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "weight": 70,
+            "name": "minecraft:iron_chestplate"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 30,
+            "name": "minecraft:diamond_chestplate"
+          }
+        ]
+      }
+    ]
+  }
+  
