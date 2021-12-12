@@ -1,0 +1,31 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:emerald",
+            "functions": [
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "text": "Chests with a rarity of netherite are not supported."
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_name",
+                "name": {
+                  "text": "Placeholder",
+                  "italic": false
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

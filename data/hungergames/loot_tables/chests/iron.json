@@ -4,6 +4,11 @@
       "rolls": 1,
       "entries": [
         {
+          "type": "minecraft:item",
+          "weight": 12,
+          "name": "minecraft:chainmail_boots"
+        },
+        {
           "type": "minecraft:empty",
           "weight": 30
         },
@@ -14,7 +19,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 30,
+          "weight": 18,
           "name": "minecraft:iron_boots"
         }
       ]
@@ -23,17 +28,22 @@
       "rolls": 1,
       "entries": [
         {
+          "type": "minecraft:item",
+          "weight": 22,
+          "name": "minecraft:leather_helmet"
+        },
+        {
           "type": "minecraft:empty",
           "weight": 20
         },
         {
           "type": "minecraft:item",
-          "weight": 30,
+          "weight": 33,
           "name": "minecraft:chainmail_helmet"
         },
         {
           "type": "minecraft:item",
-          "weight": 50,
+          "weight": 25,
           "name": "minecraft:iron_helmet"
         }
       ]
@@ -43,11 +53,11 @@
       "entries": [
         {
           "type": "minecraft:empty",
-          "weight": 90
+          "weight": 95
         },
         {
           "type": "minecraft:item",
-          "weight": 10,
+          "weight": 5,
           "name": "minecraft:diamond"
         }
       ]
@@ -57,17 +67,17 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 10,
+          "weight": 20,
           "name": "minecraft:golden_leggings"
         },
         {
           "type": "minecraft:item",
-          "weight": 20,
+          "weight": 25,
           "name": "minecraft:chainmail_leggings"
         },
         {
           "type": "minecraft:item",
-          "weight": 40,
+          "weight": 25,
           "name": "minecraft:iron_leggings"
         }
       ]
@@ -77,7 +87,7 @@
       "entries": [
         {
           "type": "minecraft:empty",
-          "weight": 10
+          "weight": 15
         },
         {
           "type": "minecraft:item",
@@ -87,15 +97,15 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1,
-                "max": 3
+                "min": 2,
+                "max": 4
               }
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "weight": 30,
+          "weight": 25,
           "name": "minecraft:golden_apple"
         }
       ]
@@ -110,12 +120,12 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 30,
+          "weight": 20,
           "name": "minecraft:iron_axe"
         },
         {
           "type": "minecraft:item",
-          "weight": 22,
+          "weight": 30,
           "name": "minecraft:bow"
         },
         {
@@ -135,7 +145,7 @@
       "entries": [
         {
           "type": "minecraft:empty",
-          "weight": 10
+          "weight": 5
         },
         {
           "type": "minecraft:item",
@@ -153,7 +163,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 35,
+          "weight": 40,
           "name": "minecraft:arrow",
           "functions": [
             {
@@ -181,22 +191,22 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 2,
+          "weight": 5,
           "name": "minecraft:golden_chestplate"
         },
         {
           "type": "minecraft:item",
-          "weight": 20,
+          "weight": 25,
           "name": "minecraft:leather_chestplate"
         },
         {
           "type": "minecraft:item",
-          "weight": 25,
+          "weight": 15,
           "name": "minecraft:iron_chestplate"
         },
         {
           "type": "minecraft:item",
-          "weight": 35,
+          "weight": 37,
           "name": "minecraft:chainmail_chestplate"
         }
       ]

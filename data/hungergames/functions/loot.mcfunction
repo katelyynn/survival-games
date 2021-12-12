@@ -23,3 +23,4 @@ execute as @e[tag=r3] at @s run loot insert ~ ~-2 ~ loot hungergames:chests/diam
 execute as @e[tag=r4] at @s run loot insert ~ ~-2 ~ loot hungergames:chests/netherite
 
 title @a actionbar {"text":"LOOTED ALL CHESTS!","color":"green","bold":true}
+execute if entity @e[tag=r4] run tellraw @a {"text":"A netherite-rated chest has been found on the map, this is not natively supported.","color":"red","bold":true}
