@@ -20,11 +20,7 @@ execute if score reset internal matches 1 as @e[tag=spawn] at @s if entity @a[di
 execute if score reset internal matches 1 as @e[tag=spawn] at @s if entity @a[distance=..1.5] run tag @a[distance=..1.5] add taken
 execute if score reset internal matches 1 as @e[tag=spawn] at @s unless entity @a[distance=..1.5] run tag @s remove taken
 execute if score reset internal matches 1 as @a at @s unless entity @e[tag=spawn,distance=..1.5] run tag @s remove taken
+
 execute if score reset internal matches 1 run function hungergames:reset/players
 
-execute if score reset internal matches 1 as @e[tag=taken,tag=spawn] at @s run setblock ~1 ~1 ~ glass
-execute if score reset internal matches 1 as @e[tag=taken,tag=spawn] at @s run setblock ~ ~1 ~1 glass
-execute if score reset internal matches 1 as @e[tag=taken,tag=spawn] at @s run setblock ~-1 ~1 ~ glass
-execute if score reset internal matches 1 as @e[tag=taken,tag=spawn] at @s run setblock ~ ~1 ~-1 glass
-
-execute if score reset internal matches 1 as @e[tag=!taken,tag=spawn] at @s run fill ~1 ~1 ~1 ~-1 ~1 ~-1 air replace glass
+effect give @a[tag=taken] slowness 1 255 true
