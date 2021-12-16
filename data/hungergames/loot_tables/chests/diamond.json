@@ -1,134 +1,95 @@
 {
   "pools": [
     {
-      "rolls": 1,
+      "rolls": 4,
       "entries": [
         {
+          "type": "minecraft:empty",
+          "weight": 20
+        },
+        {
           "type": "minecraft:item",
-          "weight": 10,
-          "name": "minecraft:tipped_arrow",
+          "weight": 3,
+          "name": "minecraft:chainmail_boots",
           "functions": [
             {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 3,
-                "max": 8
-              }
-            },
-            {
-              "function": "minecraft:set_potion",
-              "id": "minecraft:poison"
+              "function": "minecraft:enchant_with_levels",
+              "levels": 6
             }
           ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:chainmail_leggings",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 6
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:chainmail_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 6
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:chainmail_helmet",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 6
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:chainmail_boots"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:chainmail_leggings"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:chainmail_chestplate"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:chainmail_helmet"
         },
         {
           "type": "minecraft:item",
           "weight": 15,
-          "name": "minecraft:tipped_arrow",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 2,
-                "max": 9
-              }
-            },
-            {
-              "function": "minecraft:set_potion",
-              "id": "minecraft:weakness"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:empty",
-          "weight": 5
+          "name": "minecraft:iron_boots"
         },
         {
           "type": "minecraft:item",
-          "weight": 30,
-          "name": "minecraft:spectral_arrow",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 4,
-                "max": 14
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 40,
-          "name": "minecraft:arrow",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 5,
-                "max": 17
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:empty",
-          "weight": 40
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 20,
-          "name": "minecraft:totem_of_undying"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 40,
-          "name": "minecraft:experience_bottle",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 3,
-                "max": 12
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "weight": 40,
+          "weight": 15,
           "name": "minecraft:iron_leggings"
         },
         {
           "type": "minecraft:item",
-          "weight": 5,
-          "name": "minecraft:golden_leggings"
+          "weight": 15,
+          "name": "minecraft:iron_chestplate"
         },
         {
           "type": "minecraft:item",
-          "weight": 43,
-          "name": "minecraft:iron_leggings",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": 5
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 12,
-          "name": "minecraft:diamond_leggings"
+          "weight": 15,
+          "name": "minecraft:iron_helmet"
         }
       ]
     },
@@ -137,21 +98,79 @@
       "entries": [
         {
           "type": "minecraft:empty",
-          "weight": 5
+          "weight": 25
         },
         {
           "type": "minecraft:item",
-          "weight": 30,
+          "weight": 18,
+          "name": "minecraft:iron_axe",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 6
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 19,
+          "name": "minecraft:iron_sword",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 6
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 19,
+          "name": "minecraft:iron_axe"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 19,
+          "name": "minecraft:iron_sword"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 70
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 11,
+          "name": "minecraft:crossbow",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 6
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 11,
+          "name": "minecraft:bow",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 6
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 4,
           "name": "minecraft:crossbow"
         },
         {
           "type": "minecraft:item",
-          "weight": 25,
-          "name": "minecraft:fishing_rod"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 40,
+          "weight": 4,
           "name": "minecraft:bow"
         }
       ]
@@ -161,17 +180,85 @@
       "entries": [
         {
           "type": "minecraft:empty",
-          "weight": 20
+          "weight": 75
         },
         {
           "type": "minecraft:item",
-          "weight": 60,
-          "name": "minecraft:iron_axe"
+          "weight": 25,
+          "name": "minecraft:shield"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 85
         },
         {
           "type": "minecraft:item",
-          "weight": 20,
-          "name": "minecraft:diamond_axe"
+          "weight": 15,
+          "name": "minecraft:arrow",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 6,
+                "max": 10
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 85
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 15,
+          "name": "minecraft:tipped_arrow",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 6,
+                "max": 10
+              }
+            },
+            {
+              "function": "minecraft:set_potion",
+              "id": "minecraft:poison"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 50
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 50,
+          "name": "minecraft:golden_apple",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 4
+              }
+            }
+          ]
         }
       ]
     },
@@ -180,28 +267,34 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 30,
-          "name": "minecraft:iron_chestplate"
-        },
-        {
-          "type": "minecraft:empty",
-          "weight": 15
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 35,
-          "name": "minecraft:iron_chestplate",
+          "name": "minecraft:cooked_beef",
           "functions": [
             {
-              "function": "minecraft:enchant_with_levels",
-              "levels": 4
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 5,
+                "max": 7
+              }
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
         {
           "type": "minecraft:item",
-          "weight": 20,
-          "name": "minecraft:diamond_chestplate"
+          "name": "minecraft:apple",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 5,
+                "max": 7
+              }
+            }
+          ]
         }
       ]
     }

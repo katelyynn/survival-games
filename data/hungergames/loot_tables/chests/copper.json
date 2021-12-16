@@ -1,37 +1,139 @@
 {
-    "type": "minecraft:chest",
     "pools": [
       {
         "rolls": 1,
         "entries": [
           {
             "type": "minecraft:item",
-            "weight": 5,
-            "name": "minecraft:stone_sword"
+            "name": "minecraft:apple",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 2,
+                  "max": 4
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:empty",
+            "weight": 85
           },
           {
             "type": "minecraft:item",
-            "weight": 10,
+            "weight": 15,
+            "name": "minecraft:golden_apple"
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:empty",
+            "weight": 95
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 5,
+            "name": "minecraft:tipped_arrow",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 2
+                }
+              },
+              {
+                "function": "minecraft:set_potion",
+                "id": "minecraft:poison"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:empty",
+            "weight": 85
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 15,
+            "name": "minecraft:arrow",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 2,
+                  "max": 4
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:bread",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 4
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:empty",
+            "weight": 75
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 25,
             "name": "minecraft:shield"
-          },
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
           {
             "type": "minecraft:item",
-            "weight": 5,
+            "weight": 3,
             "name": "minecraft:wooden_shovel"
           },
           {
+            "type": "minecraft:empty",
+            "weight": 50
+          },
+          {
             "type": "minecraft:item",
-            "weight": 35,
+            "weight": 22,
             "name": "minecraft:wooden_axe"
           },
           {
             "type": "minecraft:item",
-            "weight": 10,
-            "name": "minecraft:stone_axe"
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 35,
+            "weight": 25,
             "name": "minecraft:wooden_sword"
           }
         ]
@@ -45,66 +147,43 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 40,
-            "name": "minecraft:chainmail_leggings"
+            "weight": 5,
+            "name": "minecraft:golden_boots"
           },
           {
             "type": "minecraft:item",
-            "weight": 40,
+            "weight": 5,
+            "name": "minecraft:golden_leggings"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 5,
+            "name": "minecraft:golden_chestplate"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 5,
+            "name": "minecraft:golden_helmet"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 15,
+            "name": "minecraft:leather_boots"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 15,
             "name": "minecraft:leather_leggings"
-          }
-        ]
-      },
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "weight": 20,
-            "name": "minecraft:chainmail_chestplate"
-          },
-          {
-            "type": "minecraft:empty",
-            "weight": 40
           },
           {
             "type": "minecraft:item",
-            "weight": 40,
+            "weight": 15,
             "name": "minecraft:leather_chestplate"
-          }
-        ]
-      },
-      {
-        "rolls": 2,
-        "bonus_rolls": 50,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "weight": 50,
-            "name": "minecraft:cooked_beef",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 1,
-                  "max": 3
-                }
-              }
-            ]
           },
           {
             "type": "minecraft:item",
-            "weight": 50,
-            "name": "minecraft:bread",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 1,
-                  "max": 3
-                }
-              }
-            ]
+            "weight": 15,
+            "name": "minecraft:leather_helmet"
           }
         ]
       }

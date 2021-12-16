@@ -1,0 +1,1 @@
+summon falling_block ~ 250 ~ {BlockState:{Name:"minecraft:barrel",Properties:{facing:"up"}},TileEntityData:{LootTable:"hungergames:chests/gold"},Time:1}
