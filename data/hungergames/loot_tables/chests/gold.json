@@ -5,11 +5,11 @@
       "entries": [
         {
           "type": "minecraft:empty",
-          "weight": 20
+          "weight": 25
         },
         {
           "type": "minecraft:item",
-          "weight": 2,
+          "weight": 1,
           "name": "minecraft:golden_boots",
           "functions": [
             {
@@ -20,7 +20,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 2,
+          "weight": 1,
           "name": "minecraft:golden_leggings",
           "functions": [
             {
@@ -31,7 +31,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 2,
+          "weight": 1,
           "name": "minecraft:golden_chestplate",
           "functions": [
             {
@@ -53,12 +53,12 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 4,
+          "weight": 3,
           "name": "minecraft:golden_boots"
         },
         {
           "type": "minecraft:item",
-          "weight": 4,
+          "weight": 3,
           "name": "minecraft:golden_leggings"
         },
         {
@@ -68,27 +68,27 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 5,
+          "weight": 4,
           "name": "minecraft:golden_helmet"
         },
         {
           "type": "minecraft:item",
-          "weight": 18,
+          "weight": 14,
           "name": "minecraft:chainmail_boots"
         },
         {
           "type": "minecraft:item",
-          "weight": 18,
+          "weight": 14,
           "name": "minecraft:chainmail_leggings"
         },
         {
           "type": "minecraft:item",
-          "weight": 18,
+          "weight": 14,
           "name": "minecraft:chainmail_chestplate"
         },
         {
           "type": "minecraft:item",
-          "weight": 19,
+          "weight": 14,
           "name": "minecraft:chainmail_helmet"
         }
       ]
@@ -194,6 +194,20 @@
       "entries": [
         {
           "type": "minecraft:empty",
+          "weight": 85
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 15,
+          "name": "minecraft:fishing_rod"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:empty",
           "weight": 80
         },
         {
@@ -266,14 +280,37 @@
       "rolls": 1,
       "entries": [
         {
+          "type": "minecraft:empty",
+          "weight": 50
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 50,
+          "name": "minecraft:lapis_lazuli",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
           "type": "minecraft:item",
           "name": "minecraft:cooked_beef",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 4,
-                "max": 8
+                "min": 2,
+                "max": 4
               }
             }
           ]
@@ -290,8 +327,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 4,
-                "max": 6
+                "min": 2,
+                "max": 4
               }
             }
           ]
