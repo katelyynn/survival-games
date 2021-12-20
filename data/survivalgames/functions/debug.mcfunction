@@ -1,4 +1,4 @@
-# HUNGER GAMES DEBUG PARTICLES
+# SURVIVAL GAMES DEBUG PARTICLES
 
 
 execute if score debug internal matches 1 as @e[tag=r0] at @s run particle minecraft:block waxed_copper_block ~ ~-1 ~ 0 0 0 1 1

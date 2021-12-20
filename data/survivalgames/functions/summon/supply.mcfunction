@@ -1,4 +1,4 @@
-# HUNGER GAMES SUPPLY DROPS
+# SURVIVAL GAMES SUPPLY DROPS
 
 
 execute store result score supply_time internal run scoreboard players get time_s internal
@@ -17,7 +17,7 @@ execute store result score supply_z internal run data get entity @e[tag=supply,t
 tellraw @a [{"text":"A ","color":"yellow"},{"text":"SUPPLY CRATE","color":"gold","bold":true},{"text":" is dropping at ("},{"score":{"name":"supply_x","objective":"internal"},"color":"gold","bold":true},{"text":", "},{"score":{"name":"supply_z","objective":"internal"},"color":"gold","bold":true},{"text":") - get there quick!"}]
 
 # Create a supply drop
-execute as @e[tag=supply,tag=temp] at @s run summon falling_block ~ 250 ~ {BlockState:{Name:"minecraft:barrel",Properties:{facing:"up"}},TileEntityData:{LootTable:"hungergames:chests/diamond"},Time:1}
+execute as @e[tag=supply,tag=temp] at @s run summon falling_block ~ 250 ~ {BlockState:{Name:"minecraft:barrel",Properties:{facing:"up"}},TileEntityData:{LootTable:"survivalgames:chests/diamond"},Time:1}
 
 # Remove temp
 execute as @e[tag=supply,tag=temp] run tag @s remove temp

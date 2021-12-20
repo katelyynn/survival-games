@@ -116,16 +116,17 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:empty"
+          "type": "minecraft:empty",
+          "weight": 66
         },
         {
           "type": "minecraft:item",
-          "weight": 8,
+          "weight": 20,
           "name": "minecraft:bow"
         },
         {
           "type": "minecraft:item",
-          "weight": 8,
+          "weight": 14,
           "name": "minecraft:crossbow"
         }
       ]

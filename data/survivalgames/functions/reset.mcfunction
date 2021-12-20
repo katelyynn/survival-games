@@ -1,4 +1,4 @@
-# HUNGER GAMES SPAWN RESET
+# SURVIVAL GAMES SPAWN RESET
 # Resets every player into a pod.
 
 
@@ -27,6 +27,8 @@ xp set @a 0 levels
 xp set @a 0 points
 
 effect clear @a
+effect give @a regeneration 9999 255 true
+effect give @a saturation 9999 255 true
 clear @a[tag=!avoid_reset]
 gamemode adventure @a[tag=!avoid_reset]
 kill @e[type=item]

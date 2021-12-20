@@ -1,4 +1,4 @@
-# HUNGER GAMES SCANNING
+# SURVIVAL GAMES SCANNING
 # For moving on the z axis
 
 

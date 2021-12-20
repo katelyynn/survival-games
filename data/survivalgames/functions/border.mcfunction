@@ -1,4 +1,4 @@
-# HUNGER GAMES BORDER
+# SURVIVAL GAMES BORDER
 
 
 scoreboard players set border_change internal 1

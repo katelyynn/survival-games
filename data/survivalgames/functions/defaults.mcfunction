@@ -1,4 +1,4 @@
-# HUNGER GAMES DEFAULT OPTIONS
+# SURVIVAL GAMES DEFAULT OPTIONS
 # Will reset all settings and create any scoreboards/bossbars for first-time use
 # Upon any reloads, this will not be ran again
 
@@ -34,7 +34,7 @@ scoreboard players set second_bordermove global 260
 
 # Alive tracking
 scoreboard objectives add alive_players dummy
-scoreboard objectives modify alive_players displayname {"text":"HUNGER GAMES","color":"gold","bold":true}
+scoreboard objectives modify alive_players displayname {"text":"SURVIVAL GAMES","color":"gold","bold":true}
 scoreboard players reset alive alive_players
 
 # Ensure defaults are not reset upon /reload
