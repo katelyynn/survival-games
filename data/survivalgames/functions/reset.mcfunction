@@ -17,7 +17,8 @@ execute as @a run scoreboard players add alive alive_players 1
 scoreboard players set started internal -1
 
 # Supply drops
-execute as @e[tag=supply] at @s run fill ~ ~ ~ ~ ~1 ~ air replace barrel
+execute as @e[tag=supply] at @s run fill ~ ~ ~ ~ ~1 ~ air replace #survivalgames:remove
+execute as @e[tag=supply] at @s run fill ~ ~ ~ ~ ~4 ~ air replace barrel
 execute as @e[tag=supply] run tag @s remove dropped
 
 scoreboard players set time internal 0

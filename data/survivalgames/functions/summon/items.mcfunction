@@ -8,7 +8,7 @@
 # 4 - NETHERITE
 
 
-execute unless score @s seen_notice matches 1 run tellraw @s ["",{"text":"\nThese are spawnable armour stands that can mark various things.\n\nChest spawn eggs will set the rarity of the chest. They should be placed *inside* the chest block.\n\nSpawn pods are used for creating pods before the game starts. They should be placed on the stone slab.\n\nCopy blocks are used to clone the state of a block upon each game reset, they are useful for resetting trapdoor (open/closed) states etc. They should be placed one block above.\n"}]
+execute unless score @s seen_notice matches 1 run tellraw @s ["",{"text":"\nThese are spawnable armour stands that can mark various things.\n\nChest spawn eggs will set the rarity of the chest. They should be placed *inside* the chest block.\n\nSpawn pods are used for creating pods before the game starts. They should be placed on the stone slab.\n\nCopy blocks are used to clone the state of a block upon each game reset, they are useful for resetting trapdoor (open/closed) states etc. They should be placed one block above.\nBorder centres mark a potential location the border may close on.\n"}]
 scoreboard players set @s seen_notice 1
 
 # Chest loot

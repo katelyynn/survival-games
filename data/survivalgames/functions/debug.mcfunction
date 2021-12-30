@@ -9,7 +9,9 @@ execute if score debug internal matches 1 as @e[tag=r4] at @s run particle minec
 
 execute if score debug internal matches 1 as @e[tag=spawn] at @s run particle minecraft:glow ~ ~-1 ~ 0 0 0 1 2
 
-execute if score debug internal matches 1 as @e[tag=copyblock] at @s run particle minecraft:glow ~ ~-1 ~ 0 0 0 1 2
+execute if score debug internal matches 1 as @e[tag=copyblock] at @s run particle minecraft:glow_squid_ink ~ ~-1 ~ 0 0 0 1 2
+
+execute if score debug internal matches 1 as @e[tag=bordercentre] at @s run particle minecraft:totem_of_undying ~ ~-1 ~ 0 0 0 1 2
 
 execute if score debug internal matches 1 as @e[tag=border] at @s run particle minecraft:nautilus ~ ~-1 ~ 0 0 0 1 2
 

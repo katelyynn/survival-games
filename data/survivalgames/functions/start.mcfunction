@@ -5,7 +5,9 @@ scoreboard players reset alive alive_players
 scoreboard players reset @a death
 execute as @a run scoreboard players add alive alive_players 1
 
-worldborder set 350 5
+worldborder set 450 5
+
+tag @e remove temp
 
 function survivalgames:loot
 scoreboard players set started internal 1
