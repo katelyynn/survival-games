@@ -15,8 +15,15 @@ function survivalgames:summon/copy
 function survivalgames:summon/worldborder
 function survivalgames:summon/supply_item
 
+# SUPPLY
+execute as @e[tag=supply,tag=temp2] at @s if block ~ ~ ~ barrel run tag @s remove temp2
+execute as @e[tag=supply,tag=!temp2] at @s if block ~ ~ ~ barrel{Items:[]} run particle minecraft:explosion_emitter ~ ~1 ~ 0 0 0 1 1
+execute as @e[tag=supply,tag=!temp2] at @s if block ~ ~ ~ barrel{Items:[]} run playsound minecraft:entity.generic.explode block @a ~ ~ ~
+execute as @e[tag=supply,tag=!temp2] at @s if block ~ ~ ~ barrel{Items:[]} run setblock ~ ~ ~ air
+execute as @e[type=falling_block] at @s run particle flame ~ ~ ~ 0 0 0 0 2
+
 # BORDER
-execute if score started internal matches 1 unless score border_change internal matches 1 as @e[tag=border_trans] at @s facing entity @e[tag=bordercentre,tag=temp] feet unless entity @e[tag=bordercentre,tag=temp,distance=..5] run tp ^ ^ ^0.1
+execute if score started internal matches 1 unless score border_change internal matches 1 as @e[tag=border_trans] at @s facing entity @e[tag=bordercentre,tag=temp] feet unless entity @e[tag=bordercentre,tag=temp,distance=..5] run tp ^ ^ ^0.3
 execute if score started internal matches 1 unless score border_change internal matches 1 as @e[tag=border_trans] at @s run worldborder center ~ ~
 execute if score started internal matches 1 unless score border_change internal matches 1 as @e[tag=border_trans] at @s run tag @e[tag=bordercentre,tag=temp,distance=..5] remove temp
 

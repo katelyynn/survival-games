@@ -30,5 +30,5 @@ execute as @e[tag=r3] at @s run data merge block ~ ~-2 ~ {LootTable:"survivalgam
 execute as @e[tag=r4] at @s run data merge block ~ ~-2 ~ {LootTable:"survivalgames:chests/netherite"}
 #execute as @e[tag=r4] at @s run loot insert ~ ~-2 ~ loot survivalgames:chests/netherite
 
-title @a actionbar {"text":"LOOTED ALL CHESTS!","color":"green","bold":true}
-execute if entity @e[tag=r4] run tellraw @a {"text":"A netherite-rated chest has been found on the map, this is not natively supported.","color":"red"}
+execute if score debug internal matches 1.. run title @a actionbar {"text":"LOOTED ALL CHESTS!","color":"green","bold":true}
+execute if entity @e[tag=r4] run tellraw @a[gamemode=creative] {"text":"A netherite-rated chest has been found on the map, this is not natively supported.","color":"red"}

@@ -29,7 +29,7 @@ summon armor_stand 0 250 0 {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,
 # Border
 summon armor_stand 0 200 0 {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["border"]}
 summon armor_stand 0 200 0 {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["border_trans"]}
-scoreboard players set first_bordermove global 120
+scoreboard players set first_bordermove global 110
 scoreboard players set second_bordermove global 260
 
 # Alive tracking
