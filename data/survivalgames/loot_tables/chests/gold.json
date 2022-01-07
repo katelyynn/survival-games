@@ -139,7 +139,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 7,
+          "weight": 5,
           "name": "minecraft:crossbow",
           "functions": [
             {
@@ -150,7 +150,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 7,
+          "weight": 6,
           "name": "minecraft:bow",
           "functions": [
             {
@@ -161,7 +161,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 8,
+          "weight": 6,
           "name": "minecraft:crossbow"
         },
         {
