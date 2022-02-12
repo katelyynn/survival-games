@@ -7,6 +7,6 @@ execute unless score supply_time internal = time_s internal if score time_s inte
 execute unless score supply_time internal = time_s internal if score time_s internal = second_supply global run function survivalgames:summon/supply
 execute unless score supply_time internal = time_s internal if score time_s internal = third_supply global run function survivalgames:summon/supply
 
-execute unless score border_time internal = time_s internal if score time_s internal = close_border global run worldborder set 30 300
+execute unless score border_time internal = time_s internal if score time_s internal = close_border global run worldborder set 30 380
 execute unless score border_time internal = time_s internal if score time_s internal = first_bordermove global run function survivalgames:border
 execute unless score border_time internal = time_s internal if score time_s internal = second_bordermove global run function survivalgames:border

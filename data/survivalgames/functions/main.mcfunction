@@ -1,6 +1,9 @@
 # SURVIVAL GAMES MAIN LOOP
 
 
+# INTERNAL (MAP-ONLY)
+execute if score started internal matches 0 run title @a actionbar ["",{"text":"Welcome! ","color":"gold","bold":true},{"text":"To start the next game, run "},{"text":"/function survivalgames:reset","color":"yellow"},{"text":" then "},{"text":"/function survivalgames:start","color":"yellow"}]
+
 # SCANNING
 execute if score scanning internal matches 1 run function survivalgames:scanning/scanning
 execute if score scanning internal matches 1 run title @a actionbar {"text":"SCANNING CHEST LOCATIONS.. DO NOT START","color":"green","bold":true}
@@ -16,11 +19,11 @@ function survivalgames:summon/worldborder
 function survivalgames:summon/supply_item
 
 # SUPPLY
-execute as @e[tag=supply,tag=temp2] at @s if block ~ ~ ~ barrel run tag @s remove temp2
-execute as @e[tag=supply,tag=!temp2] at @s if block ~ ~ ~ barrel{Items:[]} run particle minecraft:explosion_emitter ~ ~1 ~ 0 0 0 1 1
-execute as @e[tag=supply,tag=!temp2] at @s if block ~ ~ ~ barrel{Items:[]} run playsound minecraft:entity.generic.explode block @a ~ ~ ~
-execute as @e[tag=supply,tag=!temp2] at @s if block ~ ~ ~ barrel{Items:[]} run setblock ~ ~ ~ air
-execute as @e[type=falling_block] at @s run particle flame ~ ~ ~ 0 0 0 0 2
+#execute as @e[tag=supply,tag=temp2] at @s if block ~ ~ ~ barrel run tag @s remove temp2
+#execute as @e[tag=supply,tag=!temp2] at @s if block ~ ~ ~ barrel{Items:[]} run particle minecraft:explosion_emitter ~ ~1 ~ 0 0 0 1 1
+#execute as @e[tag=supply,tag=!temp2] at @s if block ~ ~ ~ barrel{Items:[]} run playsound minecraft:entity.generic.explode block @a ~ ~ ~
+#execute as @e[tag=supply,tag=!temp2] at @s if block ~ ~ ~ barrel{Items:[]} run setblock ~ ~ ~ air
+#execute as @e[type=falling_block] at @s run particle flame ~ ~ ~ 0 0 0 0 2
 
 # BORDER
 execute if score started internal matches 1 unless score border_change internal matches 1 as @e[tag=border_trans] at @s facing entity @e[tag=bordercentre,tag=temp] feet unless entity @e[tag=bordercentre,tag=temp,distance=..5] run tp ^ ^ ^0.035

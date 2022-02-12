@@ -9,6 +9,8 @@ tp @e[tag=border_trans] 0 200 0
 
 function survivalgames:clear_loot
 
+scoreboard players reset @a death
+
 worldborder center 0 0
 worldborder set 60
 
@@ -22,6 +24,7 @@ scoreboard players set started internal -1
 execute as @e[tag=supply] at @s run fill ~ ~ ~ ~ ~2 ~ air replace #survivalgames:remove
 execute as @e[tag=supply] at @s run fill ~ ~-2 ~ ~ ~6 ~ air replace barrel
 execute as @e[tag=supply] run tag @s remove dropped
+execute as @e[tag=supply] run tag @s remove temp2
 kill @e[type=item]
 kill @e[type=arrow]
 
