@@ -2,21 +2,21 @@
 
 
 # INTERNAL (MAP-ONLY)
-execute if score started internal matches 0 run title @a actionbar ["",{"text":"Welcome! ","color":"gold","bold":true},{"text":"To start the next game, run "},{"text":"/function survivalgames:reset","color":"yellow"},{"text":" then "},{"text":"/function survivalgames:start","color":"yellow"}]
+execute if score started internal matches 0 run title @a actionbar ["",{"text":"Welcome! ","color":"gold","bold":true},{"text":"To start the next game, run "},{"text":"/function sg:reset","color":"yellow"},{"text":" then "},{"text":"/function sg:start","color":"yellow"}]
 
 # SCANNING
-execute if score scanning internal matches 1 run function survivalgames:scanning/scanning
+execute if score scanning internal matches 1 run function sg:scanning/scanning
 execute if score scanning internal matches 1 run title @a actionbar {"text":"SCANNING CHEST LOCATIONS.. DO NOT START","color":"green","bold":true}
 
 # DEBUG
-execute if score debug internal matches 1 run function survivalgames:debug
+execute if score debug internal matches 1 run function sg:debug
 
 # ITEMS
-function survivalgames:summon/chest
-function survivalgames:summon/spawn
-function survivalgames:summon/copy
-function survivalgames:summon/worldborder
-function survivalgames:summon/supply_item
+function sg:summon/chest
+function sg:summon/spawn
+function sg:summon/copy
+function sg:summon/worldborder
+function sg:summon/supply_item
 
 # SUPPLY
 #execute as @e[tag=supply,tag=temp2] at @s if block ~ ~ ~ barrel run tag @s remove temp2
@@ -31,7 +31,7 @@ execute if score started internal matches 1 unless score border_change internal 
 execute if score started internal matches 1 unless score border_change internal matches 1 as @e[tag=border_trans] at @s run tag @e[tag=bordercentre,tag=temp,distance=..5] remove temp
 
 # TIME
-execute if score started internal matches 1 run function survivalgames:time
+execute if score started internal matches 1 run function sg:time
 execute if score started internal matches 1 if score debug internal matches 1.. run title @a actionbar {"score":{"name":"time_s","objective":"internal"},"color":"gold","bold":true,"italic":true}
 
 # RESET
@@ -40,16 +40,16 @@ execute if score reset internal matches 1 as @e[tag=spawn] at @s if entity @a[di
 execute if score reset internal matches 1 as @e[tag=spawn] at @s unless entity @a[distance=..1.5] run tag @s remove taken
 execute if score reset internal matches 1 as @a at @s unless entity @e[tag=spawn,distance=..1.5] run tag @s remove taken
 
-execute if score reset internal matches 1 run function survivalgames:reset/players
+execute if score reset internal matches 1 run function sg:reset/players
 
 execute if score started internal matches -1 run effect give @a[tag=taken] slowness 1 255 true
 
 execute unless score started internal matches -1 run tag @a[tag=taken] remove taken
 
-function survivalgames:reset/blocks
+function sg:reset/blocks
 
 # DEATH
-execute as @a if score @s death matches 1.. if score started internal matches 1 run function survivalgames:death
+execute as @a if score @s death matches 1.. if score started internal matches 1 run function sg:death
 
 # VICTORY
-execute as @a if score alive alive_players matches ..1 if score started internal matches 1 run function survivalgames:victory
+execute as @a if score alive alive_players matches ..1 if score started internal matches 1 run function sg:victory

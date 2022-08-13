@@ -8,4 +8,4 @@ scoreboard objectives add internal dummy
 scoreboard objectives add death deathCount
 
 # Run through and set default scoreboards
-execute unless score defaults global matches 1 run function survivalgames:defaults
+execute unless score defaults global matches 1 run function sg:defaults

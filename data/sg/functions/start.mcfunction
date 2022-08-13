@@ -9,7 +9,7 @@ worldborder set 500 5
 
 tag @e remove temp
 
-function survivalgames:loot
+function sg:loot
 scoreboard players set started internal 1
 tag @a remove taken
 effect clear @a slowness

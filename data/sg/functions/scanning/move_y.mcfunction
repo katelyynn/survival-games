@@ -3,7 +3,7 @@
 
 
 # if chest is found
-execute as @e[tag=scan,limit=1] at @s if block ~ ~ ~ chest run function survivalgames:found_chest
+execute as @e[tag=scan,limit=1] at @s if block ~ ~ ~ chest run function sg:found_chest
 
 # reset
 scoreboard players set y4 internal 0

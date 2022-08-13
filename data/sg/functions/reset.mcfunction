@@ -7,7 +7,7 @@ tag @e[tag=bordercentre] remove temp
 tp @e[tag=border] 0 200 0
 tp @e[tag=border_trans] 0 200 0
 
-function survivalgames:clear_loot
+function sg:clear_loot
 
 scoreboard players reset @a death
 
@@ -21,7 +21,7 @@ execute as @a run scoreboard players add alive alive_players 1
 scoreboard players set started internal -1
 
 # Supply drops
-execute as @e[tag=supply] at @s run fill ~ ~ ~ ~ ~2 ~ air replace #survivalgames:remove
+execute as @e[tag=supply] at @s run fill ~ ~ ~ ~ ~2 ~ air replace #sg:remove
 execute as @e[tag=supply] at @s run fill ~ ~-2 ~ ~ ~6 ~ air replace barrel
 execute as @e[tag=supply] run tag @s remove dropped
 execute as @e[tag=supply] run tag @s remove temp2

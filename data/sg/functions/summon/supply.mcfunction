@@ -17,7 +17,7 @@ execute store result score supply_z internal run data get entity @e[tag=supply,t
 tellraw @a [{"text":"A ","color":"yellow"},{"text":"SUPPLY CRATE","color":"gold","bold":true},{"text":" is dropping at ("},{"score":{"name":"supply_x","objective":"internal"},"color":"gold","bold":true},{"text":", "},{"score":{"name":"supply_z","objective":"internal"},"color":"gold","bold":true},{"text":") - get there quick!"}]
 
 # Create a supply drop
-execute as @e[tag=supply,tag=temp] at @s run summon falling_block ~ 250 ~ {BlockState:{Name:"minecraft:barrel",Properties:{facing:"up"}},TileEntityData:{LootTable:"survivalgames:chests/diamond",CustomName:'{"text":"Supply Drop","color":"gold","italic":false}'},Time:1}
+execute as @e[tag=supply,tag=temp] at @s run summon falling_block ~ 250 ~ {BlockState:{Name:"minecraft:barrel",Properties:{facing:"up"}},TileEntityData:{LootTable:"sg:chests/diamond",CustomName:'{"text":"Supply Drop","color":"gold","italic":false}'},Time:1}
 execute as @e[tag=supply,tag=temp] run tag @s add temp2
 
 # Remove temp
