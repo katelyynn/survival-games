@@ -3,7 +3,7 @@
 
 # Scoreboards
 scoreboard players set started internal 0
-scoreboard players reset alive alive_players
+scoreboard players reset alive players
 
 # Announce
 title @a title {"text":"GAME OVER!","color":"gold","bold":true}

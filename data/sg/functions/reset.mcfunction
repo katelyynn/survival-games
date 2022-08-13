@@ -14,9 +14,9 @@ scoreboard players reset @a death
 worldborder center 0 0
 worldborder set 60
 
-scoreboard players reset alive alive_players
+scoreboard players reset alive players
 scoreboard players reset @a death
-execute as @a run scoreboard players add alive alive_players 1
+execute as @a run scoreboard players add alive players 1
 
 scoreboard players set started internal -1
 

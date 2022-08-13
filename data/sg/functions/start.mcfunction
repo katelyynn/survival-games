@@ -1,9 +1,9 @@
 # SURVIVAL GAMES START
 
 
-scoreboard players reset alive alive_players
+scoreboard players reset alive players
 scoreboard players reset @a death
-execute as @a run scoreboard players add alive alive_players 1
+execute as @a run scoreboard players add alive players 1
 
 worldborder set 500 5
 
