@@ -1,7 +1,9 @@
-# SURVIVAL GAMES MAIN LOOP
+# SURVIVAL GAMES main loop
 
 
-# INTERNAL (MAP-ONLY)
+# welcome notice
+## used for map only
+## https://GSOT.plexion.dev/library/survivalgamesmap
 execute if score started internal matches 0 run title @a actionbar ["",{"text":"Welcome! ","color":"gold","bold":true},{"text":"To start the next game, run "},{"text":"/function sg:reset","color":"yellow"},{"text":" then "},{"text":"/function sg:start","color":"yellow"}]
 
 # SCANNING
