@@ -1,25 +1,33 @@
-# SURVIVAL GAMES START
+# SURVIVAL GAMES start
 
 
-scoreboard players reset alive players
+scoreboard players set started internal 1
 scoreboard players reset @a death
-execute as @a run scoreboard players add alive players 1
-
-worldborder set 500 5
-
+tag @a remove taken
 tag @e remove temp
 
-function sg:loot
-scoreboard players set started internal 1
-tag @a remove taken
+# track alive players
+scoreboard players reset alive players
+execute as @a run scoreboard players add alive players 1
+
+# world
+worldborder set 500 5
+
+# loot chests
+function sg:chest/loot
+
+# announce
+title @a title {"text":"SURVIVAL GAMES","color":"green","bold":true}
+title @a subtitle {"text":"by GSOT"}
+# sfx
+execute as @a at @s run playsound block.note_block.pling player @s ~ ~ ~
+execute as @a at @s run playsound entity.generic.explode player @s ~ ~ ~
+
+# effects
 effect clear @a slowness
 effect clear @a regeneration
 effect clear @a saturation
-execute as @a at @s run playsound block.note_block.pling player @s ~ ~ ~
-execute as @a at @s run playsound entity.generic.explode player @s ~ ~ ~
-title @a title {"text":"SURVIVAL GAMES","color":"green","bold":true}
-title @a subtitle {"text":"by GSOT"}
-
+## particles
 execute as @e[tag=spawn] at @s run particle minecraft:glow ~ ~ ~ 0 0 0 1 10
 execute as @e[tag=rating] at @s run particle minecraft:glow ~ ~-2 ~ 0 0 0 1 10
 

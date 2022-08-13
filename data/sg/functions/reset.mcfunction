@@ -7,7 +7,7 @@ tag @e[tag=bordercentre] remove temp
 tp @e[tag=border] 0 200 0
 tp @e[tag=border_trans] 0 200 0
 
-function sg:clear_loot
+function sg:chest/clear
 
 scoreboard players reset @a death
 
