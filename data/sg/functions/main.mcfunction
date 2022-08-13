@@ -6,10 +6,6 @@
 ## https://GSOT.plexion.dev/library/survivalgamesmap
 execute if score started internal matches 0 run title @a actionbar ["",{"text":"Welcome! ","color":"gold","bold":true},{"text":"To start the next game, run "},{"text":"/function sg:reset","color":"yellow"},{"text":" then "},{"text":"/function sg:start","color":"yellow"}]
 
-# SCANNING
-execute if score scanning internal matches 1 run function sg:scanning/scanning
-execute if score scanning internal matches 1 run title @a actionbar {"text":"SCANNING CHEST LOCATIONS.. DO NOT START","color":"green","bold":true}
-
 # DEBUG
 execute if score debug internal matches 1 run function sg:debug
 
