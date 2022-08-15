@@ -1,4 +1,4 @@
-# SURVIVAL GAMES death
+# SG death
 
 
 # xp

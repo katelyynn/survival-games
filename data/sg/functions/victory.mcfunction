@@ -1,4 +1,4 @@
-# SURVIVAL GAMES win
+# SG win
 
 
 scoreboard players set started internal 0

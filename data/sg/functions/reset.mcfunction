@@ -1,4 +1,4 @@
-# SURVIVAL GAMES SPAWN RESET
+# SG SPAWN RESET
 # Resets every player into a pod.
 
 

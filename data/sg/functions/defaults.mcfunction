@@ -1,4 +1,4 @@
-# SURVIVAL GAMES defaults
+# SG defaults
 
 
 # seen notice?

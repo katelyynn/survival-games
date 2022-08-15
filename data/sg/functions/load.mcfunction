@@ -1,4 +1,4 @@
-# SURVIVAL GAMES /reload
+# SG /reload
 
 
 # scoreboards

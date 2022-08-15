@@ -1,4 +1,4 @@
-# SURVIVAL GAMES main loop
+# SG main loop
 
 
 # welcome notice

@@ -1,4 +1,4 @@
-# SURVIVAL GAMES border
+# SG border
 
 
 scoreboard players set border_change internal 1

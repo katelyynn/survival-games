@@ -1,4 +1,4 @@
-# SURVIVAL GAMES start
+# SG start
 
 
 scoreboard players set started internal 1

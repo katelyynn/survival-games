@@ -1,4 +1,4 @@
-# SURVIVAL GAMES debug mode
+# SG debug mode
 
 
 # chest ratings

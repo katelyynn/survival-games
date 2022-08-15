@@ -1,4 +1,4 @@
-# SURVIVAL GAMES SUPPLY DROPS
+# SG SUPPLY DROPS
 
 
 execute store result score supply_time internal run scoreboard players get time_s internal

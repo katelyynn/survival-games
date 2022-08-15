@@ -1,4 +1,4 @@
-# SURVIVAL GAMES INIT SPAWN POD
+# SG INIT SPAWN POD
 
 
 execute as @e[tag=summon_spawn] at @s run execute positioned ~ ~ ~ run kill @e[tag=spawn,distance=..1,limit=1]

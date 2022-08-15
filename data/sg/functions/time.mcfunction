@@ -1,4 +1,4 @@
-# SURVIVAL GAMES time
+# SG time
 
 
 scoreboard players add time internal 1
