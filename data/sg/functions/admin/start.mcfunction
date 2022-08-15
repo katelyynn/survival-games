@@ -21,7 +21,7 @@ function sg:chest/loot
 title @a title {"text":"SURVIVAL GAMES","color":"green","bold":true}
 title @a subtitle {"text":"Let the games begin!"}
 # sfx
-execute as @a at @s run playsound block.note_block.pling player @s ~ ~ ~
+execute as @a at @s run playsound entity.arrow.hit_player player @s ~ ~ ~
 execute as @a at @s run playsound entity.generic.explode player @s ~ ~ ~
 
 # effects
