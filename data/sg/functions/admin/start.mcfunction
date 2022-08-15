@@ -20,6 +20,7 @@ function sg:chest/loot
 # announce
 title @a title {"text":"SURVIVAL GAMES","color":"green","bold":true}
 title @a subtitle {"text":"Let the games begin!"}
+tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"!","color":"green","bold":true},{"text":"] ","color":"dark_gray"},{"text":"The game has started!","color":"yellow"}]
 # sfx
 execute as @a at @s run playsound entity.arrow.hit_player player @s ~ ~ ~
 execute as @a at @s run playsound entity.generic.explode player @s ~ ~ ~

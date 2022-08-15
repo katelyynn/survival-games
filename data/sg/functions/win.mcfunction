@@ -7,6 +7,7 @@ scoreboard players reset alive players
 # announce
 title @a title {"text":"GAME OVER!","color":"gold","bold":true}
 title @a subtitle [{"selector":"@a[gamemode=adventure]"},{"text":" has won the game."}]
+tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"!","color":"green","bold":true},{"text":"] ","color":"dark_gray"},{"selector":"@a[tag=win,limit=1]","color":"gold"},{"text":" has won with ","color":"yellow"},{"score":{"name":"@a[tag=win,limit=1]","objective":"kills"},"color":"gold"},{"text":" kills!","color":"yellow"}]
 # sfx
 execute as @a at @s run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~
 
