@@ -9,7 +9,7 @@ execute if score started internal matches 0 run title @a actionbar ["",{"text":"
 
 # debug mode
 ## used for marking custom items
-execute if score debug internal matches 1 run function sg:debug
+execute if score debug internal matches 1 run function sg:system/debug
 
 # custom items
 function sg:summon/main
