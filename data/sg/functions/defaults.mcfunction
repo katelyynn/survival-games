@@ -16,6 +16,7 @@ summon armor_stand 0 200 0 {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,
 summon armor_stand 0 200 0 {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["border_trans"]}
 scoreboard players set border_move_1 global 110
 scoreboard players set border_move_2 global 260
+scoreboard players set close_border global 40
 
 # players drop XP on death
 scoreboard players set drop_xp_death global 1
