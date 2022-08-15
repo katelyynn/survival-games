@@ -13,6 +13,8 @@ execute if score debug internal matches 1 run function sg:debug
 
 # custom items
 function sg:summon/main
+## clear of glow berries
+clear @a[gamemode=!creative] glow_berries
 
 # border
 execute if score started internal matches 1 unless score border_change internal matches 1 as @e[tag=border_trans] at @s facing entity @e[tag=bordercentre,tag=temp] feet unless entity @e[tag=bordercentre,tag=temp,distance=..5] run tp ^ ^ ^0.042
