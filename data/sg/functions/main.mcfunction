@@ -47,4 +47,4 @@ function sg:reset/blocks
 execute as @a at @s if score @s death matches 1.. if score started internal matches 1 run function sg:death
 
 # track victory
-execute as @a if score alive players matches ..1 if score started internal matches 1 run function sg:win
+execute as @a at @s if score alive players matches ..1 if score started internal matches 1 run function sg:win
