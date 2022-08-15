@@ -4,7 +4,7 @@
 # welcome notice
 ## designed for map, appears when game is not in progress
 ## https://GSOT.plexion.dev/library/survivalgamesmap
-execute if score started internal matches 0 run title @a actionbar ["",{"text":"Welcome! ","color":"gold","bold":true},{"text":"To start the next game, run "},{"text":"/function sg:reset","color":"yellow"},{"text":" then "},{"text":"/function sg:start","color":"yellow"}]
+execute if score started internal matches 0 run title @a actionbar ["",{"text":"Welcome! ","color":"gold","bold":true},{"text":"Ready for a new game? Run "},{"text":"/function sg:start","color":"yellow"},{"text":" and let the games begin!"}]
 
 
 # debug mode
