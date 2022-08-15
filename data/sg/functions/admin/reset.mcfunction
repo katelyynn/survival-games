@@ -16,6 +16,7 @@ function sg:chest/clear
 
 # reset scores
 scoreboard players reset @a death
+scoreboard players reset @a kills
 scoreboard players reset alive players
 execute as @a run scoreboard players add alive players 1
 # set game state
