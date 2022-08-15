@@ -16,7 +16,7 @@ execute store result score supply_x internal run data get entity @e[tag=supply,t
 execute store result score supply_z internal run data get entity @e[tag=supply,tag=temp,limit=1] Pos[2]
 
 # announce
-tellraw @a [{"text":"[","color":"dark_gray"},{"text":"!","color":"green","bold":true},{"text":"] ","color":"dark_gray"},{"text":"A ","color":"yellow"},{"text":"SUPPLY CRATE","color":"gold","bold":true},{"text":" is dropping at (","color":"yellow"},{"score":{"name":"supply_x","objective":"internal"},"color":"gold","bold":true},{"text":" / ","color":"yellow"},{"score":{"name":"supply_z","objective":"internal"},"color":"gold","bold":true},{"text":") - get there quick!","color":"yellow"}]
+tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"!","color":"green","bold":true},{"text":"] ","color":"dark_gray"},{"text":"A ","color":"yellow"},{"text":"SUPPLY CRATE","color":"gold","bold":true},{"text":" is dropping at (","color":"yellow"},{"score":{"name":"supply_x","objective":"internal"},"color":"gold","bold":true},{"text":" / ","color":"yellow"},{"score":{"name":"supply_z","objective":"internal"},"color":"gold","bold":true},{"text":") - get there quick!","color":"yellow"}]
 
 # create entity
 execute as @e[tag=supply,tag=temp] at @s run summon falling_block ~ 250 ~ {BlockState:{Name:"minecraft:barrel",Properties:{facing:"up"}},TileEntityData:{LootTable:"sg:chests/diamond",CustomName:'{"text":"Supply Drop","color":"gold","italic":false}'},Time:1}

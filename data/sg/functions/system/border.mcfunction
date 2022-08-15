@@ -19,7 +19,7 @@ execute store result score border_x internal run data get entity @e[tag=borderce
 execute store result score border_z internal run data get entity @e[tag=bordercentre,tag=temp,limit=1] Pos[2]
 
 # announce
-tellraw @a [{"text":"[","color":"dark_gray"},{"text":"!","color":"red","bold":true},{"text":"] ","color":"dark_gray"},{"text":"The border is closing in on (","color":"yellow"},{"score":{"name":"border_x","objective":"internal"},"color":"gold","bold":true},{"text":" / ","color":"yellow"},{"score":{"name":"border_z","objective":"internal"},"color":"gold","bold":true},{"text":") - be careful!","color":"yellow"}]
+tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"!","color":"red","bold":true},{"text":"] ","color":"dark_gray"},{"text":"The border is closing in on (","color":"yellow"},{"score":{"name":"border_x","objective":"internal"},"color":"gold","bold":true},{"text":" / ","color":"yellow"},{"score":{"name":"border_z","objective":"internal"},"color":"gold","bold":true},{"text":") - be careful!","color":"yellow"}]
 
 
 scoreboard players set border_change internal 0
