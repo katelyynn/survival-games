@@ -34,3 +34,7 @@ execute as @e[tag=spawn] at @s run particle minecraft:glow ~ ~ ~ 0 0 0 1 10
 execute as @e[tag=rating] at @s run particle minecraft:glow ~ ~-2 ~ 0 0 0 1 10
 
 execute as @e[tag=copyblock] at @s run clone ~ ~ ~ ~ ~ ~ ~ ~100 ~
+
+# give resistance at start
+## aka. grace period
+execute if score grace_period global matches 1.. run effect give @a resistance 5 255 true

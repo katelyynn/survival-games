@@ -21,6 +21,10 @@ scoreboard players set close_border global 40
 # players drop XP on death
 scoreboard players set drop_xp_death global 1
 
+# give resistance at start
+## aka. grace period
+scoreboard players set grace_period global 1
+
 # track alive players
 scoreboard objectives add players dummy
 scoreboard objectives modify players displayname {"text":"SURVIVAL GAMES","color":"gold","bold":true}
