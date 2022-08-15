@@ -1,6 +1,9 @@
 # SG border
 
 
+# remove tags related to border
+tag @e[tag=bordercentre] remove temp
+
 scoreboard players set border_change internal 1
 
 tp @e[tag=border] 0 200 0
