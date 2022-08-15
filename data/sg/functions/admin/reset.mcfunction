@@ -1,43 +1,54 @@
-# SG SPAWN RESET
-# Resets every player into a pod.
+# SG game reset
+## resets all aspects of the game for next round
 
 
+# remove tags related to border
 tag @e[tag=bordercentre] remove temp
-
+## reset border position
 tp @e[tag=border] 0 200 0
 tp @e[tag=border_trans] 0 200 0
-
-function sg:chest/clear
-
-scoreboard players reset @a death
-
+## control border
 worldborder center 0 0
 worldborder set 60
 
-scoreboard players reset alive players
-scoreboard players reset @a death
-execute as @a run scoreboard players add alive players 1
+# clear chests
+function sg:chest/clear
 
+# reset scores
+scoreboard players reset @a death
+scoreboard players reset alive players
+execute as @a run scoreboard players add alive players 1
+# set game state
 scoreboard players set started internal -1
 
-# Supply drops
+# supply drops
+## remove old drops
 execute as @e[tag=supply] at @s run fill ~ ~ ~ ~ ~2 ~ air replace #sg:remove
 execute as @e[tag=supply] at @s run fill ~ ~-2 ~ ~ ~6 ~ air replace barrel
 execute as @e[tag=supply] run tag @s remove dropped
 execute as @e[tag=supply] run tag @s remove temp2
+
+# kill entities from previous round
 kill @e[type=item]
 kill @e[type=arrow]
 
+# reset timer
 scoreboard players set time internal 0
 scoreboard players set time_s internal 0
 
+# reset XP
 xp set @a 0 levels
 xp set @a 0 points
 
+# effects
 effect clear @a
 effect give @a regeneration 9999 255 true
 effect give @a saturation 9999 255 true
+
+# reset player states
 clear @a[tag=!avoid_reset]
 gamemode adventure @a[tag=!avoid_reset]
-kill @e[type=item]
+
+
+
 scoreboard players set reset internal 1

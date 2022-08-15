@@ -1,4 +1,5 @@
 # SG start
+## will start instantly, avoiding countdown
 
 
 scoreboard players set started internal 1
@@ -11,14 +12,14 @@ scoreboard players reset alive players
 execute as @a run scoreboard players add alive players 1
 
 # world
-worldborder set 500 5
+worldborder set 500 10
 
 # loot chests
 function sg:chest/loot
 
 # announce
 title @a title {"text":"SURVIVAL GAMES","color":"green","bold":true}
-title @a subtitle {"text":"by GSOT"}
+title @a subtitle {"text":"Let the games begin!"}
 # sfx
 execute as @a at @s run playsound block.note_block.pling player @s ~ ~ ~
 execute as @a at @s run playsound entity.generic.explode player @s ~ ~ ~
