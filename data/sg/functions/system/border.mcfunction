@@ -23,6 +23,8 @@ execute store result score border_z internal run data get entity @e[tag=borderce
 
 # announce
 tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"!","color":"red","bold":true},{"text":"] ","color":"dark_gray"},{"text":"The border is closing in on (","color":"yellow"},{"score":{"name":"border_x","objective":"internal"},"color":"gold","bold":true},{"text":" / ","color":"yellow"},{"score":{"name":"border_z","objective":"internal"},"color":"gold","bold":true},{"text":") - be careful!","color":"yellow"}]
+# sfx
+execute as @a at @s run playsound minecraft:block.note_block.bass player @s
 
 
 scoreboard players set border_change internal 0
