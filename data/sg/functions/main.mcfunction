@@ -20,6 +20,10 @@ clear @a[gamemode=!creative] glow_berries
 ## kill tnt entities
 execute if entity @e[type=tnt] run kill @e[type=tnt]
 
+# snow particles
+## snow_particles
+execute if score snow_particles global matches 1.. as @a at @s if block ~ ~ ~ minecraft:snow run particle minecraft:snowflake ~ ~2 ~ 10 10 10 0 6 force
+
 # border
 execute if score started internal matches 1 unless score border_change internal matches 1 as @e[tag=border_trans] at @s facing entity @e[tag=bordercentre,tag=temp] feet unless entity @e[tag=bordercentre,tag=temp,distance=..5] run tp ^ ^ ^0.042
 execute if score started internal matches 1 unless score border_change internal matches 1 as @e[tag=border_trans] at @s run worldborder center ~ ~

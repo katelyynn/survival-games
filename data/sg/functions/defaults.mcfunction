@@ -25,6 +25,9 @@ scoreboard players set drop_xp_death global 1
 ## aka. grace period
 scoreboard players set grace_period global 1
 
+# snow particles
+scoreboard players set snow_particles global 1
+
 # track alive players
 scoreboard objectives add players dummy
 scoreboard objectives modify players displayname {"text":"SURVIVAL GAMES","color":"gold","bold":true}
