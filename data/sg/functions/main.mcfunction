@@ -4,7 +4,7 @@
 # welcome notice
 ## appears when game is not in progress
 ## is disabled in realms mode
-execute unless score realms global matches 1.. if score period internal matches 0 run title @a actionbar ["",{"text":"Welcome! ","color":"gold","bold":true},{"text":"Ready for a new game? Run "},{"text":"/function sg:start","color":"yellow"},{"text":" and let the games begin!"}]
+execute unless score realms global matches 1.. if score period internal matches -1 run title @a actionbar ["",{"text":"Welcome! ","color":"gold","bold":true},{"text":"Ready for a new game? Run "},{"text":"/function sg:start","color":"yellow"},{"text":" and let the games begin!"}]
 
 
 # debug mode
@@ -45,9 +45,9 @@ execute if score reset internal matches 1 run function sg:reset/players
 
 # pre-start
 ## effect slowness
-execute if score period internal matches -1 run effect give @a[tag=taken] slowness 1 255 true
+execute if score period internal matches 0 run effect give @a[tag=taken] slowness 1 255 true
 ## remove tags for reset
-execute unless score period internal matches -1 run tag @a[tag=taken] remove taken
+execute unless score period internal matches 0 run tag @a[tag=taken] remove taken
 ## reset custom blocks
 function sg:reset/blocks
 
