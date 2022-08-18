@@ -1,10 +1,6 @@
 # SG defaults
 
 
-# seen notice?
-## used to describe mapmaking items
-scoreboard objectives add seen_notice dummy
-
 # supply drops
 scoreboard players set supply_drop_1 global 90
 scoreboard players set supply_drop_2 global 140
