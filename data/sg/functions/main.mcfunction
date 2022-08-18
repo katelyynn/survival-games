@@ -4,7 +4,7 @@
 # welcome notice
 ## appears when game is not in progress
 ## is disabled in realms mode
-execute unless score realms global matches 1.. if score started internal matches 0 run title @a actionbar ["",{"text":"Welcome! ","color":"gold","bold":true},{"text":"Ready for a new game? Run "},{"text":"/function sg:start","color":"yellow"},{"text":" and let the games begin!"}]
+execute unless score realms global matches 1.. if score period internal matches 0 run title @a actionbar ["",{"text":"Welcome! ","color":"gold","bold":true},{"text":"Ready for a new game? Run "},{"text":"/function sg:start","color":"yellow"},{"text":" and let the games begin!"}]
 
 
 # debug mode
@@ -25,14 +25,14 @@ execute if entity @e[type=tnt] run kill @e[type=tnt]
 execute if score snow_particles global matches 1.. as @a at @s if block ~ ~ ~ minecraft:snow run particle minecraft:snowflake ~ ~2 ~ 10 10 10 0 6 force
 
 # border
-execute if score started internal matches 1 unless score border_change internal matches 1 as @e[tag=border_trans] at @s facing entity @e[tag=bordercentre,tag=temp] feet unless entity @e[tag=bordercentre,tag=temp,distance=..5] run tp ^ ^ ^0.042
-execute if score started internal matches 1 unless score border_change internal matches 1 as @e[tag=border_trans] at @s run worldborder center ~ ~
-execute if score started internal matches 1 unless score border_change internal matches 1 as @e[tag=border_trans] at @s run tag @e[tag=bordercentre,tag=temp,distance=..5] remove temp
+execute if score period internal matches 1 unless score border_change internal matches 1 as @e[tag=border_trans] at @s facing entity @e[tag=bordercentre,tag=temp] feet unless entity @e[tag=bordercentre,tag=temp,distance=..5] run tp ^ ^ ^0.042
+execute if score period internal matches 1 unless score border_change internal matches 1 as @e[tag=border_trans] at @s run worldborder center ~ ~
+execute if score period internal matches 1 unless score border_change internal matches 1 as @e[tag=border_trans] at @s run tag @e[tag=bordercentre,tag=temp,distance=..5] remove temp
 
 # time
-execute if score started internal matches 1 run function sg:time
+execute if score period internal matches 1 run function sg:time
 ## display if in debug mode
-execute if score started internal matches 1 if score debug internal matches 1.. run title @a actionbar {"score":{"name":"time_s","objective":"internal"},"color":"gold","bold":true,"italic":true}
+execute if score period internal matches 1 if score debug internal matches 1.. run title @a actionbar {"score":{"name":"time_s","objective":"internal"},"color":"gold","bold":true,"italic":true}
 
 # reset
 ## place into spawn pods
@@ -45,14 +45,14 @@ execute if score reset internal matches 1 run function sg:reset/players
 
 # pre-start
 ## effect slowness
-execute if score started internal matches -1 run effect give @a[tag=taken] slowness 1 255 true
+execute if score period internal matches -1 run effect give @a[tag=taken] slowness 1 255 true
 ## remove tags for reset
-execute unless score started internal matches -1 run tag @a[tag=taken] remove taken
+execute unless score period internal matches -1 run tag @a[tag=taken] remove taken
 ## reset custom blocks
 function sg:reset/blocks
 
 # track deaths
-execute as @a at @s if score @s death matches 1.. if score started internal matches 1 run function sg:death
+execute as @a at @s if score @s death matches 1.. if score period internal matches 1 run function sg:death
 
 # track victory
-execute as @a at @s if score alive players matches ..1 if score started internal matches 1 run function sg:win
+execute as @a at @s if score alive players matches ..1 if score period internal matches 1 run function sg:win

@@ -1,7 +1,7 @@
 # SG win
 
 
-scoreboard players set started internal 0
+scoreboard players set period internal 0
 scoreboard players reset alive players
 
 # announce

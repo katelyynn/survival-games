@@ -20,7 +20,7 @@ scoreboard players reset @a kills
 scoreboard players reset alive players
 execute as @a run scoreboard players add alive players 1
 # set game state
-scoreboard players set started internal -1
+scoreboard players set period internal -1
 
 # supply drops
 ## remove old drops

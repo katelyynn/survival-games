@@ -2,7 +2,7 @@
 ## will start instantly, avoiding countdown
 
 
-scoreboard players set started internal 1
+scoreboard players set period internal 1
 scoreboard players reset @a death
 tag @a remove taken
 tag @e remove temp
