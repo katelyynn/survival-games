@@ -5,7 +5,6 @@
 # 1 - IRON
 # 2 - GOLD
 # 3 - DIAMOND
-# 4 - NETHERITE
 
 
 # chest loot
@@ -17,8 +16,6 @@ give @s silverfish_spawn_egg{display:{Name:'{"text":"IRON Chest","color":"white"
 give @s silverfish_spawn_egg{display:{Name:'{"text":"GOLD Chest","color":"gold","bold":true,"italic":false}'},Enchantments:[{}],EntityTag:{Silent:1b,NoAI:1b,Tags:["summon_r2"]}} 1
 ## diamond
 give @s silverfish_spawn_egg{display:{Name:'{"text":"DIAMOND Chest","color":"aqua","bold":true,"italic":false}'},Enchantments:[{}],EntityTag:{Silent:1b,NoAI:1b,Tags:["summon_r3"]}} 1
-# Netherite
-#execute if score debug internal matches 1 run give @s silverfish_spawn_egg{display:{Name:'{"text":"NETHERITE Chest (not recommended)","color":"black","bold":true,"italic":false}'},Enchantments:[{}],EntityTag:{Silent:1b,NoAI:1b,Tags:["summon_r4"]}} 1
 
 
 # spawn pod
