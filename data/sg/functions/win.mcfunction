@@ -21,3 +21,7 @@ execute as @a[gamemode=adventure] at @s run summon firework_rocket ~ ~1 ~ {Firew
 
 # display own kills
 tellraw @s ["",{"text":"[","color":"dark_gray"},{"text":"⭐","color":"gold"},{"text":"] ","color":"dark_gray"},{"text":"You got ","color":"yellow"},{"score":{"name":"@s","objective":"kills"},"color":"gold"},{"text":" kills this round.","color":"yellow"}]
+
+
+# return to lobby
+schedule function sg:lobby 5s
