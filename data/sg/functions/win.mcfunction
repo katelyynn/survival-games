@@ -1,8 +1,11 @@
 # SG win
 
 
-scoreboard players set period internal 0
+scoreboard players set period internal 3
 scoreboard players reset alive players
+
+# range check kills
+execute as @a unless score @s kills matches 0.. run scoreboard players set @s kills 0
 
 # announce
 title @s title {"text":"GAME OVER!","color":"gold","bold":true}
