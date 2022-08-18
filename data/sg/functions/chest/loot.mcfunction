@@ -7,16 +7,14 @@
 # 3 - DIAMOND
 
 
-# 0
+# chest loot
+## copper
 execute as @e[tag=r0] at @s run data merge block ~ ~-2 ~ {LootTable:"sg:chests/copper"}
-
-# 1
+## iron
 execute as @e[tag=r1] at @s run data merge block ~ ~-2 ~ {LootTable:"sg:chests/iron"}
-
-# 2
+## gold
 execute as @e[tag=r2] at @s run data merge block ~ ~-2 ~ {LootTable:"sg:chests/gold"}
-
-# 3
+## diamond
 execute as @e[tag=r3] at @s run data merge block ~ ~-2 ~ {LootTable:"sg:chests/diamond"}
 
 
