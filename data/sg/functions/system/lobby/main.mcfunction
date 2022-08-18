@@ -3,8 +3,8 @@
 
 
 # set gamemode
-execute positioned 0 316 0 as @a[gamemode=spectator,distance=..12] run tp @s 0 315 0
-execute positioned 0 316 0 as @a[gamemode=spectator,distance=..12] run gamemode adventure @s
+execute positioned 0 316 0 as @a[gamemode=spectator,distance=..22] run tp @s 0 315 0
+execute positioned 0 316 0 as @a[gamemode=spectator,distance=..22] run gamemode adventure @s
 
 # buttons
 ## START GAME
