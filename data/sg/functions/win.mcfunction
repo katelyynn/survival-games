@@ -10,7 +10,7 @@ execute as @a unless score @s kills matches 0.. run scoreboard players set @s ki
 # announce
 title @s title {"text":"GAME OVER!","color":"gold","bold":true}
 title @s subtitle [{"selector":"@a[gamemode=adventure]"},{"text":" has won the game."}]
-tellraw @s ["",{"text":"[","color":"dark_gray"},{"text":"!","color":"green","bold":true},{"text":"] ","color":"dark_gray"},{"selector":"@a[gamemode=adventure]","color":"gold"},{"text":" has won with ","color":"yellow"},{"score":{"name":"@a[tag=win,limit=1]","objective":"kills"},"color":"gold"},{"text":" kills!","color":"yellow"}]
+tellraw @s ["",{"text":"[","color":"dark_gray"},{"text":"!","color":"green","bold":true},{"text":"] ","color":"dark_gray"},{"selector":"@a[gamemode=adventure]","color":"gold"},{"text":" has won with ","color":"yellow"},{"score":{"name":"@a[gamemode=adventure,limit=1]","objective":"kills"},"color":"gold"},{"text":" kills!","color":"yellow"}]
 # sfx
 playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~
 
