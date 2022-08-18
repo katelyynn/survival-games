@@ -14,6 +14,10 @@ scoreboard players set border_move_1 global 110
 scoreboard players set border_move_2 global 260
 scoreboard players set close_border global 40
 
+# realms mode
+## removes mentions to functions etc.
+scoreboard players set realms global 0
+
 # players drop XP on death
 scoreboard players set drop_xp_death global 1
 
