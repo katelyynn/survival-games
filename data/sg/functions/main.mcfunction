@@ -6,6 +6,9 @@
 ## is disabled in realms mode
 execute unless score realms global matches 1.. if score period internal matches -1 run title @a actionbar ["",{"text":"Welcome! ","color":"gold","bold":true},{"text":"Ready for a new game? Run "},{"text":"/function sg:start","color":"yellow"},{"text":" and let the games begin!"}]
 
+# reset spawn
+## tied directly to map
+execute if score realms global matches 1.. run spawnpoint @a 0 315 0
 
 # debug mode
 ## used for marking custom items
