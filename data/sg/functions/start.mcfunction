@@ -14,7 +14,7 @@ execute unless score can_start_players internal matches 1.. run tellraw @a ["",{
 execute if score period internal matches -1 run scoreboard players set can_start_period internal 1
 execute unless score can_start_period internal matches 1.. run tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"X","color":"red","bold":true},{"text":"] ","color":"dark_gray"},{"text":"Cannot start, a game is already in progress.","color":"red"}]
 # teams check
-execute if score teams global matches 1.. if entity @a[team=red] if entity @a[team=blue] run scoreboard players set can_start_teams internal 1
+execute if score teams global matches 1.. if entity @a[team=red] if entity @a[team=blue] unless entity @a[team=!red,team=!blue] run scoreboard players set can_start_teams internal 1
 execute unless score teams global matches 1.. run scoreboard players set can_start_teams internal 1
 execute unless score can_start_teams internal matches 1.. run tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"X","color":"red","bold":true},{"text":"] ","color":"dark_gray"},{"text":"Cannot start, at least 1 player on each team is required.","color":"red"}]
 
