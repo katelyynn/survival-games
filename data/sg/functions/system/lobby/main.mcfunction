@@ -19,3 +19,19 @@ execute if block 0 316 4 stone_button[powered=true] run setblock 0 316 4 stone_b
 ## EXPLORE MAP
 execute if block 0 316 -4 stone_button[powered=true] positioned 0 316 -4 as @p[distance=..3.5] run function sg:system/lobby/explore
 execute if block 0 316 -4 stone_button[powered=true] run setblock 0 316 -4 stone_button[powered=false,facing=south]
+## MODE
+## <
+execute if block 4 316 -1 stone_button[powered=true] positioned 4 316 -1 run scoreboard players remove mode global 1
+execute if block 4 316 -1 stone_button[powered=true] run setblock 4 316 -1 stone_button[powered=false,facing=west]
+## >
+execute if block 4 316 1 stone_button[powered=true] positioned 4 316 1 run scoreboard players add mode global 1
+execute if block 4 316 1 stone_button[powered=true] run setblock 4 316 1 stone_button[powered=false,facing=west]
+
+# range check
+execute unless score mode global matches 0.. run scoreboard players set mode global 0
+execute unless score mode global matches ..1 run scoreboard players set mode global 1
+
+# display
+## MODE
+execute if score mode global matches 0 run data merge block 4 316 0 {Color:"black",Text3:'{"text":"experience."}',Text2:'{"text":"The classic"}',Text1:'{"text":"NORMAL"}',GlowingText:1b}
+execute if score mode global matches 1 run data merge block 4 316 0 {Color:"black",Text3:'{"text":"loot-tables!"}',Text2:'{"text":"Overpowered"}',Text1:'{"text":"BOOSTED"}',GlowingText:1b}
