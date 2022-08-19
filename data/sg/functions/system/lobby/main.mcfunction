@@ -31,7 +31,7 @@ execute unless score teams global matches 1.. run fill -4 315 1 -4 315 -1 air re
 # detect team blocks
 execute if score teams global matches 1.. as @a at @s if block ~ ~ ~ red_carpet run team join red
 execute if score teams global matches 1.. as @a at @s if block ~ ~ ~ blue_carpet run team join blue
-execute if score teams global matches 1.. as @a at @s if block ~ ~ ~ light_gray_carpet run team leave
+execute if score teams global matches 1.. as @a at @s if block ~ ~ ~ light_gray_carpet run team leave @s
 ## clear
 execute unless score teams global matches 1.. run team leave @a
 
