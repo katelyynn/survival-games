@@ -5,6 +5,15 @@
 # world
 worldborder set 1000
 
+# reset XP
+xp set @a 0 levels
+xp set @a 0 points
+
+# effects
+effect give @a resistance 9999 255 true
+effect give @a regeneration 9999 255 true
+effect give @a saturation 9999 255 true
+
 # get spectator height
 execute as @a[gamemode=spectator] store result score @s spectator_height run data get entity @s Pos[1]
 
