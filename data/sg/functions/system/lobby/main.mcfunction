@@ -17,6 +17,9 @@ effect give @a saturation 9999 255 true
 # set team blocks
 execute if score teams global matches 1.. run fill -4 315 4 -4 315 2 red_carpet replace air
 execute if score teams global matches 1.. run fill -4 315 -2 -4 315 -4 blue_carpet replace air
+## clear
+execute unless score teams global matches 1.. run fill -4 315 4 -4 315 2 air replace red_carpet
+execute unless score teams global matches 1.. run fill -4 315 -2 -4 315 -4 air replace blue_carpet
 
 # detect team blocks
 execute if score teams global matches 1.. as @a at @s if block ~ ~ ~ red_carpet run team join red
@@ -67,4 +70,4 @@ execute if score mode global matches 0 run data merge block 4 316 0 {Color:"blac
 execute if score mode global matches 1 run data merge block 4 316 0 {Color:"black",Text3:'{"text":"loot-tables!"}',Text2:'{"text":"Overpowered"}',Text1:'{"text":"BOOSTED","color":"light_purple"}',GlowingText:1b}
 ## TEAMS
 execute if score teams global matches 0 run data merge block -4 316 0 {Color:"black",Text3:'{"text":""}',Text2:'{"text":"Free for all."}',Text1:'{"text":"SOLOS"}',GlowingText:1b}
-execute if score teams global matches 1 run data merge block -4 316 0 {Color:"black",Text3:'{"text":"death together!"}',Text2:'{"text":"Fight to the"}',Text1:'{"text":"TEAMS","color":"red"}',GlowingText:1b}
+execute if score teams global matches 1 run data merge block -4 316 0 {Color:"black",Text3:'{"text":"death together!"}',Text2:'{"text":"Fight to the"}',Text1:'{"text":"TEAMS"}',GlowingText:1b}
