@@ -34,4 +34,4 @@ execute unless score mode global matches ..1 run scoreboard players set mode glo
 # display
 ## MODE
 execute if score mode global matches 0 run data merge block 4 316 0 {Color:"black",Text3:'{"text":"experience."}',Text2:'{"text":"The classic"}',Text1:'{"text":"NORMAL"}',GlowingText:1b}
-execute if score mode global matches 1 run data merge block 4 316 0 {Color:"black",Text3:'{"text":"loot-tables!"}',Text2:'{"text":"Overpowered"}',Text1:'{"text":"BOOSTED"}',GlowingText:1b}
+execute if score mode global matches 1 run data merge block 4 316 0 {Color:"black",Text3:'{"text":"loot-tables!"}',Text2:'{"text":"Overpowered"}',Text1:'{"text":"BOOSTED","color":"light_purple"}',GlowingText:1b}
