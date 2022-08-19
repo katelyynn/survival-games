@@ -8,8 +8,8 @@ execute store result score supply_time internal run scoreboard players get time_
 execute as @e[tag=find_supply] at @s run spreadplayers 0 0 10 150 false @s
 # find nearest marked location
 ## marked by #supply entities
-execute as @e[tag=find_supply] at @s run tag @e[tag=supply,tag=!dropped,sort=nearest,limit=1] add dropped
-execute as @e[tag=find_supply] at @s run tag @e[tag=supply,sort=nearest,limit=1] add temp
+execute as @e[tag=find_supply] at @s run tag @e[tag=supply,tag=!dropped,sort=nearest,limit=1] add temp
+execute as @e[tag=find_supply] at @s run tag @e[tag=supply,tag=temp] add dropped
 
 # store position
 execute store result score supply_x internal run data get entity @e[tag=supply,tag=temp,limit=1] Pos[0]
