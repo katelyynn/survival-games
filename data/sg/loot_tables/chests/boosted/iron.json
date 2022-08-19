@@ -102,13 +102,24 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 30,
+          "weight": 20,
           "name": "minecraft:stone_axe"
         },
         {
           "type": "minecraft:item",
-          "weight": 30,
+          "weight": 25,
           "name": "minecraft:stone_sword"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 15,
+          "name": "minecraft:stone_axe",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 3
+            }
+          ]
         }
       ]
     },
@@ -164,18 +175,18 @@
       "entries": [
         {
           "type": "minecraft:empty",
-          "weight": 73
+          "weight": 68
         },
         {
           "type": "minecraft:item",
-          "weight": 27,
+          "weight": 32,
           "name": "minecraft:arrow",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
                 "min": 3,
-                "max": 7
+                "max": 8
               }
             }
           ]
@@ -214,11 +225,11 @@
       "entries": [
         {
           "type": "minecraft:empty",
-          "weight": 62
+          "weight": 60
         },
         {
           "type": "minecraft:item",
-          "weight": 38,
+          "weight": 40,
           "name": "minecraft:golden_apple",
           "functions": [
             {
@@ -284,7 +295,7 @@
               "function": "minecraft:set_count",
               "count": {
                 "min": 2,
-                "max": 4
+                "max": 5
               }
             }
           ]
