@@ -2,9 +2,12 @@
 ## binds button functionality n things
 
 
+# get spectator height
+execute as @a[gamemode=spectator] store result score @s spectator_height run data get entity @s Pos[1]
+
 # set gamemode
-execute positioned 0 316 0 as @a[gamemode=spectator,distance=..22] run tp @s 0 315 0
-execute positioned 0 316 0 as @a[gamemode=spectator,distance=..22] run gamemode adventure @s
+execute as @a[gamemode=spectator,distance=..22] if score @s spectator_height >= return_height internal run tp @s 0 315 0
+execute as @a[gamemode=spectator,distance=..22] if score @s spectator_height >= return_height internal run gamemode adventure @s
 
 # buttons
 ## START GAME

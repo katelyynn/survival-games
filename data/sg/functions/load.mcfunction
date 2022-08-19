@@ -7,5 +7,8 @@ scoreboard objectives add internal dummy
 scoreboard objectives add death deathCount
 scoreboard objectives add kills playerKillCount
 
+# track spectator height
+scoreboard objectives add spectator_height dummy
+
 
 execute unless score defaults internal matches 1.. run function sg:defaults

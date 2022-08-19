@@ -18,6 +18,9 @@ scoreboard players set close_border global 40
 ## removes mentions to functions etc.
 scoreboard players set realms global 0
 
+# spectator lobby return height
+scoreboard players set return_height internal 250
+
 # players drop XP on death
 scoreboard players set drop_xp_death global 1
 
