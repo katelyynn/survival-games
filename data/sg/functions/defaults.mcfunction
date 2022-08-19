@@ -36,5 +36,8 @@ scoreboard objectives add players dummy
 scoreboard objectives modify players displayname {"text":"SURVIVAL GAMES","color":"gold","bold":true}
 scoreboard players reset alive players
 
+# world
+gamerule announceAdvancements false
+
 
 scoreboard players set defaults internal 1
