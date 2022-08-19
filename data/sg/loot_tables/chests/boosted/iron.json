@@ -175,11 +175,11 @@
       "entries": [
         {
           "type": "minecraft:empty",
-          "weight": 68
+          "weight": 60
         },
         {
           "type": "minecraft:item",
-          "weight": 32,
+          "weight": 40,
           "name": "minecraft:arrow",
           "functions": [
             {
