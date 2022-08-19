@@ -22,13 +22,16 @@ title @a[team=!red,team=!blue] actionbar ["",{"text":"Join a team by standing on
 # set team blocks
 execute if score teams global matches 1.. run fill -4 315 4 -4 315 2 red_carpet replace air
 execute if score teams global matches 1.. run fill -4 315 -2 -4 315 -4 blue_carpet replace air
+execute if score teams global matches 1.. run fill -4 315 1 -4 315 -1 light_gray_carpet replace air
 ## clear
 execute unless score teams global matches 1.. run fill -4 315 4 -4 315 2 air replace red_carpet
 execute unless score teams global matches 1.. run fill -4 315 -2 -4 315 -4 air replace blue_carpet
+execute unless score teams global matches 1.. run fill -4 315 1 -4 315 -1 air replace light_gray_carpet
 
 # detect team blocks
 execute if score teams global matches 1.. as @a at @s if block ~ ~ ~ red_carpet run team join red
 execute if score teams global matches 1.. as @a at @s if block ~ ~ ~ blue_carpet run team join blue
+execute if score teams global matches 1.. as @a at @s if block ~ ~ ~ light_gray_carpet run team leave
 ## clear
 execute unless score teams global matches 1.. run team leave @a
 
