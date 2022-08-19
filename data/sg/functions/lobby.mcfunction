@@ -8,6 +8,9 @@ xp set @a 0 levels
 xp set @a 0 points
 tag @a remove win
 
+# clear teams
+team leave @a
+
 # reset to lobby
 tp @a 0 315 0 0 0
 
