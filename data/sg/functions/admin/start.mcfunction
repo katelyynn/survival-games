@@ -26,9 +26,7 @@ execute as @a at @s run playsound entity.arrow.hit_player player @s ~ ~ ~
 execute as @a at @s run playsound entity.generic.explode player @s ~ ~ ~
 
 # effects
-effect clear @a slowness
-effect clear @a regeneration
-effect clear @a saturation
+effect clear @a
 ## particles
 execute as @e[tag=spawn] at @s run particle minecraft:glow ~ ~ ~ 0 0 0 1 10
 execute as @e[tag=rating] at @s run particle minecraft:glow ~ ~-2 ~ 0 0 0 1 10

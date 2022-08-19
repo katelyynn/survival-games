@@ -44,11 +44,6 @@ scoreboard players set time_s internal 0
 xp set @a 0 levels
 xp set @a 0 points
 
-# effects
-effect clear @a
-effect give @a regeneration 9999 255 true
-effect give @a saturation 9999 255 true
-
 # reset player states
 clear @a[tag=!avoid_reset]
 gamemode adventure @a[tag=!avoid_reset]
