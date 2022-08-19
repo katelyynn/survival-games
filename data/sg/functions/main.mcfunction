@@ -61,4 +61,10 @@ function sg:reset/blocks
 execute as @a at @s if score @s death matches 1.. if score period internal matches 1 run function sg:death
 
 # track victory
-execute as @a at @s if score alive players matches ..1 if score period internal matches 1 run function sg:win
+## solos
+execute as @a at @s unless score teams global matches 1.. if score alive players matches ..1 if score period internal matches 1 run function sg:win/go
+## teams
+## red
+execute as @a at @s if score teams global matches 1.. if score red players matches 1.. unless score blue players matches 1.. if score period internal matches 1 run function sg:win/red
+## blue
+execute as @a at @s if score teams global matches 1.. if score blue players matches 1.. unless score red players matches 1.. if score period internal matches 1 run function sg:win/blue

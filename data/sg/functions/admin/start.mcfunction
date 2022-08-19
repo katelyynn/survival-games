@@ -10,6 +10,11 @@ tag @e remove temp
 # track alive players
 scoreboard players reset alive players
 execute as @a run scoreboard players add alive players 1
+## teams
+scoreboard players reset red players
+scoreboard players reset blue players
+execute as @a[team=red] run scoreboard players add red players 1
+execute as @a[team=blue] run scoreboard players add blue players 1
 
 # world
 worldborder set 500 10
