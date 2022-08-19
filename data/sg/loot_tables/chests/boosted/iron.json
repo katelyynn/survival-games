@@ -14,7 +14,7 @@
           "functions": [
             {
               "function": "minecraft:enchant_with_levels",
-              "levels": 2
+              "levels": 3
             }
           ]
         },
@@ -25,7 +25,7 @@
           "functions": [
             {
               "function": "minecraft:enchant_with_levels",
-              "levels": 2
+              "levels": 3
             }
           ]
         },
@@ -36,7 +36,7 @@
           "functions": [
             {
               "function": "minecraft:enchant_with_levels",
-              "levels": 2
+              "levels": 3
             }
           ]
         },
@@ -47,7 +47,7 @@
           "functions": [
             {
               "function": "minecraft:enchant_with_levels",
-              "levels": 2
+              "levels": 3
             }
           ]
         },
@@ -117,16 +117,16 @@
       "entries": [
         {
           "type": "minecraft:empty",
-          "weight": 60
+          "weight": 70
         },
         {
           "type": "minecraft:item",
-          "weight": 18,
+          "weight": 23,
           "name": "minecraft:bow"
         },
         {
           "type": "minecraft:item",
-          "weight": 10,
+          "weight": 15,
           "name": "minecraft:crossbow"
         }
       ]
@@ -136,11 +136,11 @@
       "entries": [
         {
           "type": "minecraft:empty",
-          "weight": 73
+          "weight": 72
         },
         {
           "type": "minecraft:item",
-          "weight": 27,
+          "weight": 28,
           "name": "minecraft:shield"
         }
       ]
@@ -164,11 +164,11 @@
       "entries": [
         {
           "type": "minecraft:empty",
-          "weight": 75
+          "weight": 73
         },
         {
           "type": "minecraft:item",
-          "weight": 25,
+          "weight": 27,
           "name": "minecraft:arrow",
           "functions": [
             {
@@ -214,18 +214,18 @@
       "entries": [
         {
           "type": "minecraft:empty",
-          "weight": 66
+          "weight": 62
         },
         {
           "type": "minecraft:item",
-          "weight": 34,
+          "weight": 38,
           "name": "minecraft:golden_apple",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
                 "min": 1,
-                "max": 2
+                "max": 3
               }
             }
           ]

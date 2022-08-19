@@ -36,7 +36,7 @@
           "functions": [
             {
               "function": "minecraft:enchant_with_levels",
-              "levels": 6
+              "levels": 7
             }
           ]
         },
@@ -118,7 +118,7 @@
           "functions": [
             {
               "function": "minecraft:enchant_with_levels",
-              "levels": 6
+              "levels": 7
             }
           ]
         },
@@ -139,11 +139,11 @@
       "entries": [
         {
           "type": "minecraft:empty",
-          "weight": 64
+          "weight": 55
         },
         {
           "type": "minecraft:item",
-          "weight": 14,
+          "weight": 18,
           "name": "minecraft:crossbow",
           "functions": [
             {
@@ -154,7 +154,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 11,
+          "weight": 16,
           "name": "minecraft:bow",
           "functions": [
             {
@@ -194,11 +194,11 @@
       "entries": [
         {
           "type": "minecraft:empty",
-          "weight": 85
+          "weight": 75
         },
         {
           "type": "minecraft:item",
-          "weight": 15,
+          "weight": 25,
           "name": "minecraft:fishing_rod"
         }
       ]
@@ -208,18 +208,18 @@
       "entries": [
         {
           "type": "minecraft:empty",
-          "weight": 85
+          "weight": 75
         },
         {
           "type": "minecraft:item",
-          "weight": 15,
+          "weight": 25,
           "name": "minecraft:arrow",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
                 "min": 6,
-                "max": 10
+                "max": 12
               }
             }
           ]
@@ -269,7 +269,7 @@
               "function": "minecraft:set_count",
               "count": {
                 "min": 2,
-                "max": 5
+                "max": 6
               }
             }
           ]

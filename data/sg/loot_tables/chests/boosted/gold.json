@@ -36,7 +36,7 @@
           "functions": [
             {
               "function": "minecraft:enchant_with_levels",
-              "levels": 4
+              "levels": 5
             }
           ]
         },
@@ -98,7 +98,7 @@
       "entries": [
         {
           "type": "minecraft:empty",
-          "weight": 25
+          "weight": 23
         },
         {
           "type": "minecraft:item",
@@ -107,7 +107,7 @@
           "functions": [
             {
               "function": "minecraft:enchant_with_levels",
-              "levels": 4
+              "levels": 5
             }
           ]
         },
@@ -118,13 +118,13 @@
           "functions": [
             {
               "function": "minecraft:enchant_with_levels",
-              "levels": 4
+              "levels": 5
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "weight": 19,
+          "weight": 21,
           "name": "minecraft:stone_axe"
         },
         {
@@ -139,18 +139,18 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 5,
+          "weight": 10,
           "name": "minecraft:crossbow",
           "functions": [
             {
               "function": "minecraft:enchant_with_levels",
-              "levels": 4
+              "levels": 5
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "weight": 6,
+          "weight": 11,
           "name": "minecraft:bow",
           "functions": [
             {
@@ -166,7 +166,7 @@
         },
         {
           "type": "minecraft:empty",
-          "weight": 70
+          "weight": 60
         },
         {
           "type": "minecraft:item",
@@ -180,11 +180,11 @@
       "entries": [
         {
           "type": "minecraft:empty",
-          "weight": 70
+          "weight": 68
         },
         {
           "type": "minecraft:item",
-          "weight": 30,
+          "weight": 32,
           "name": "minecraft:shield"
         }
       ]
@@ -269,7 +269,7 @@
               "function": "minecraft:set_count",
               "count": {
                 "min": 1,
-                "max": 3
+                "max": 4
               }
             }
           ]
@@ -310,7 +310,7 @@
               "function": "minecraft:set_count",
               "count": {
                 "min": 2,
-                "max": 4
+                "max": 6
               }
             }
           ]
@@ -328,7 +328,7 @@
               "function": "minecraft:set_count",
               "count": {
                 "min": 2,
-                "max": 4
+                "max": 5
               }
             }
           ]

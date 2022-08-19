@@ -23,11 +23,11 @@
         "entries": [
           {
             "type": "minecraft:empty",
-            "weight": 75
+            "weight": 70
           },
           {
             "type": "minecraft:item",
-            "weight": 25,
+            "weight": 30,
             "name": "minecraft:golden_apple"
           }
         ]
@@ -64,11 +64,11 @@
         "entries": [
           {
             "type": "minecraft:empty",
-            "weight": 80
+            "weight": 70
           },
           {
             "type": "minecraft:item",
-            "weight": 20,
+            "weight": 30,
             "name": "minecraft:arrow",
             "functions": [
               {
@@ -128,11 +128,11 @@
         "entries": [
           {
             "type": "minecraft:empty",
-            "weight": 72
+            "weight": 70
           },
           {
             "type": "minecraft:item",
-            "weight": 28,
+            "weight": 30,
             "name": "minecraft:shield"
           }
         ]
@@ -142,11 +142,11 @@
         "entries": [
           {
             "type": "minecraft:empty",
-            "weight": 88
+            "weight": 86
           },
           {
             "type": "minecraft:item",
-            "weight": 12,
+            "weight": 14,
             "name": "minecraft:fishing_rod"
           }
         ]
@@ -165,13 +165,18 @@
           },
           {
             "type": "minecraft:item",
-            "weight": 24,
+            "weight": 20,
             "name": "minecraft:wooden_axe"
           },
           {
             "type": "minecraft:item",
-            "weight": 28,
+            "weight": 22,
             "name": "minecraft:wooden_sword"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 10,
+            "name": "minecraft:stone_axe"
           }
         ]
       },
@@ -180,26 +185,26 @@
         "entries": [
           {
             "type": "minecraft:empty",
-            "weight": 20
+            "weight": 16
           },
           {
             "type": "minecraft:item",
-            "weight": 5,
+            "weight": 6,
             "name": "minecraft:golden_boots"
           },
           {
             "type": "minecraft:item",
-            "weight": 5,
+            "weight": 6,
             "name": "minecraft:golden_leggings"
           },
           {
             "type": "minecraft:item",
-            "weight": 5,
+            "weight": 6,
             "name": "minecraft:golden_chestplate"
           },
           {
             "type": "minecraft:item",
-            "weight": 5,
+            "weight": 6,
             "name": "minecraft:golden_helmet"
           },
           {
