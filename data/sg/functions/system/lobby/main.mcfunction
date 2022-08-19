@@ -2,6 +2,9 @@
 ## binds button functionality n things
 
 
+# world
+worldborder set 1000
+
 # get spectator height
 execute as @a[gamemode=spectator] store result score @s spectator_height run data get entity @s Pos[1]
 

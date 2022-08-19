@@ -9,9 +9,6 @@ tag @a remove win
 # reset to lobby
 tp @a 0 315 0 0 0
 
-# world
-worldborder set 1000
-
 # announce
 tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"!","color":"green","bold":true},{"text":"] ","color":"dark_gray"},{"text":"Game over!","color":"yellow"}]
 # sfx
