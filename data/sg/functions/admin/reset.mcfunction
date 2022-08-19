@@ -11,6 +11,9 @@ tp @e[tag=border_trans] 0 200 0
 worldborder center 0 0
 worldborder set 60
 
+scoreboard players reset border_time internal
+scoreboard players reset supply_time internal
+
 # clear chests
 function sg:chest/clear
 
