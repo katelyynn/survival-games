@@ -14,6 +14,12 @@ effect give @a resistance 9999 255 true
 effect give @a regeneration 9999 255 true
 effect give @a saturation 9999 255 true
 
+# give team items
+## red
+execute if score teams global matches 1.. run item replace entity @a hotbar.7 with red_dye{display:{Name:'{"text":"Join Red","color":"red","italic":false}'},Enchantments:[{}]}
+## blue
+execute if score teams global matches 1.. run item replace entity @a hotbar.8 with blue_dye{display:{Name:'{"text":"Join Blue","color":"blue","italic":false}'},Enchantments:[{}]}
+
 # get spectator height
 execute as @a[gamemode=spectator] store result score @s spectator_height run data get entity @s Pos[1]
 
