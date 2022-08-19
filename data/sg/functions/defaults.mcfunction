@@ -17,6 +17,9 @@ scoreboard players set border_move_1 global 60
 scoreboard players set border_move_2 global 300
 scoreboard players set close_border global 22
 
+# teams
+scoreboard players set teams global 0
+
 # realms mode
 ## removes mentions to functions etc.
 scoreboard players set realms global 0

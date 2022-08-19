@@ -10,5 +10,13 @@ scoreboard objectives add kills playerKillCount
 # track spectator height
 scoreboard objectives add spectator_height dummy
 
+# teams
+## red
+team add red
+team modify red color red
+## blue
+team add blue
+team modify blue color blue
+
 
 execute unless score defaults internal matches 1.. run function sg:defaults
