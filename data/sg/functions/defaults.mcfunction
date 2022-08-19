@@ -13,8 +13,8 @@ kill @e[tag=border]
 kill @e[tag=border_trans]
 summon armor_stand 0 200 0 {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["border"]}
 summon armor_stand 0 200 0 {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1b,Tags:["border_trans"]}
-scoreboard players set border_move_1 global 90
-scoreboard players set border_move_2 global 360
+scoreboard players set border_move_1 global 60
+scoreboard players set border_move_2 global 300
 scoreboard players set close_border global 22
 
 # realms mode
