@@ -8,7 +8,7 @@ scoreboard players set border_change internal 1
 
 tp @e[tag=border] 0 200 0
 
-execute store result score border_time internal run scoreboard players get time_s internal
+scoreboard players operation border_time internal = time_s internal
 
 # pick random location
 execute as @e[tag=border] at @s run spreadplayers 0 0 10 150 false @s
