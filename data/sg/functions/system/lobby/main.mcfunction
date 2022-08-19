@@ -18,6 +18,8 @@ effect give @a saturation 9999 255 true
 execute if score teams global matches 1.. run title @a[team=red] actionbar ["",{"text":"You are on Team "},{"text":"Red","color":"red"}]
 execute if score teams global matches 1.. run title @a[team=blue] actionbar ["",{"text":"You are on Team "},{"text":"Blue","color":"blue"}]
 execute if score teams global matches 1.. run title @a[team=!red,team=!blue] actionbar ["",{"text":"Join a team by standing on a colour."}]
+## clear
+execute unless score teams global matches 1.. run title @a actionbar ""
 
 # set team blocks
 execute if score teams global matches 1.. run fill -4 315 4 -4 315 2 red_carpet replace air
