@@ -14,6 +14,11 @@ effect give @a resistance 9999 255 true
 effect give @a regeneration 9999 255 true
 effect give @a saturation 9999 255 true
 
+# display team
+title @a[team=red] actionbar ["",{"text":"You are on Team "},{"text":"Red","color":"red"}]
+title @a[team=blue] actionbar ["",{"text":"You are on Team "},{"text":"Blue","color":"blue"}]
+title @a[team=!red,team=!blue] actionbar ["",{"text":"Join a team by standing on a colour."}]
+
 # set team blocks
 execute if score teams global matches 1.. run fill -4 315 4 -4 315 2 red_carpet replace air
 execute if score teams global matches 1.. run fill -4 315 -2 -4 315 -4 blue_carpet replace air
