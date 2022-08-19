@@ -37,4 +37,4 @@ execute as @e[tag=copyblock] at @s run clone ~ ~ ~ ~ ~ ~ ~ ~100 ~
 
 # give resistance at start
 ## aka. grace period
-execute if score grace_period global matches 1.. run effect give @a resistance 5 255 true
+execute if score grace_period global matches 1.. run effect give @a resistance 7 255 true
