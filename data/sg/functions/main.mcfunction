@@ -8,7 +8,8 @@ execute unless score realms global matches 1.. if score period internal matches 
 
 # reset spawn
 ## tied directly to map
-execute if score realms global matches 1.. run spawnpoint @a 0 315 0
+execute if score realms global matches 1.. if score period internal matches -1 run spawnpoint @a 0 315 0
+execute if score realms global matches 1.. unless score period internal matches -1 run spawnpoint @a 0 160 0
 # lobby-specific features
 execute if score realms global matches 1.. run function sg:system/lobby/main
 
