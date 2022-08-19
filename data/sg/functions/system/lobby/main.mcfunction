@@ -66,5 +66,5 @@ execute unless score teams global matches ..1 run scoreboard players set teams g
 execute if score mode global matches 0 run data merge block 4 316 0 {Color:"black",Text3:'{"text":"experience."}',Text2:'{"text":"The classic"}',Text1:'{"text":"NORMAL"}',GlowingText:1b}
 execute if score mode global matches 1 run data merge block 4 316 0 {Color:"black",Text3:'{"text":"loot-tables!"}',Text2:'{"text":"Overpowered"}',Text1:'{"text":"BOOSTED","color":"light_purple"}',GlowingText:1b}
 ## TEAMS
-execute if score teams global matches 0 run data merge block 4 316 0 {Color:"black",Text3:'{"text":""}',Text2:'{"text":"Free for all."}',Text1:'{"text":"SOLOS"}',GlowingText:1b}
-execute if score teams global matches 1 run data merge block 4 316 0 {Color:"black",Text3:'{"text":"death together!"}',Text2:'{"text":"Fight to the"}',Text1:'{"text":"TEAMS","color":"red"}',GlowingText:1b}
+execute if score teams global matches 0 run data merge block -4 316 0 {Color:"black",Text3:'{"text":""}',Text2:'{"text":"Free for all."}',Text1:'{"text":"SOLOS"}',GlowingText:1b}
+execute if score teams global matches 1 run data merge block -4 316 0 {Color:"black",Text3:'{"text":"death together!"}',Text2:'{"text":"Fight to the"}',Text1:'{"text":"TEAMS","color":"red"}',GlowingText:1b}
