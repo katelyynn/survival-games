@@ -73,42 +73,42 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 14,
+          "weight": 12,
           "name": "minecraft:chainmail_boots"
         },
         {
           "type": "minecraft:item",
-          "weight": 14,
+          "weight": 12,
           "name": "minecraft:chainmail_leggings"
         },
         {
           "type": "minecraft:item",
-          "weight": 14,
+          "weight": 12,
           "name": "minecraft:chainmail_chestplate"
         },
         {
           "type": "minecraft:item",
-          "weight": 14,
+          "weight": 12,
           "name": "minecraft:chainmail_helmet"
         },
         {
           "type": "minecraft:item",
-          "weight": 3,
+          "weight": 5,
           "name": "minecraft:iron_boots"
         },
         {
           "type": "minecraft:item",
-          "weight": 4,
+          "weight": 6,
           "name": "minecraft:iron_leggings"
         },
         {
           "type": "minecraft:item",
-          "weight": 4,
+          "weight": 6,
           "name": "minecraft:iron_chestplate"
         },
         {
           "type": "minecraft:item",
-          "weight": 4,
+          "weight": 6,
           "name": "minecraft:iron_helmet"
         }
       ]
@@ -316,7 +316,7 @@
               "function": "minecraft:set_count",
               "count": {
                 "min": 1,
-                "max": 4
+                "max": 5
               }
             }
           ]
