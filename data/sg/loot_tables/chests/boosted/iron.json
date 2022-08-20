@@ -20,7 +20,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 7,
+          "weight": 8,
           "name": "minecraft:golden_leggings",
           "functions": [
             {
@@ -31,7 +31,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 7,
+          "weight": 8,
           "name": "minecraft:golden_chestplate",
           "functions": [
             {
@@ -42,7 +42,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 7,
+          "weight": 8,
           "name": "minecraft:golden_helmet",
           "functions": [
             {
@@ -73,22 +73,22 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 6,
+          "weight": 5,
           "name": "minecraft:leather_boots"
         },
         {
           "type": "minecraft:item",
-          "weight": 6,
+          "weight": 5,
           "name": "minecraft:leather_leggings"
         },
         {
           "type": "minecraft:item",
-          "weight": 6,
+          "weight": 5,
           "name": "minecraft:leather_chestplate"
         },
         {
           "type": "minecraft:item",
-          "weight": 6,
+          "weight": 5,
           "name": "minecraft:leather_helmet"
         },
         {
@@ -103,7 +103,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 3,
+          "weight": 4,
           "name": "minecraft:iron_chestplate"
         },
         {

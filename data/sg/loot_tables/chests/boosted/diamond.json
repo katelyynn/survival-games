@@ -5,7 +5,7 @@
       "entries": [
         {
           "type": "minecraft:empty",
-          "weight": 40
+          "weight": 36
         },
         {
           "type": "minecraft:item",
@@ -83,8 +83,19 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 5,
+          "weight": 6,
           "name": "minecraft:iron_chestplate"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:iron_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 5
+            }
+          ]
         },
         {
           "type": "minecraft:item",

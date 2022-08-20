@@ -118,7 +118,7 @@
       "entries": [
         {
           "type": "minecraft:empty",
-          "weight": 23
+          "weight": 2
         },
         {
           "type": "minecraft:item",
@@ -144,13 +144,34 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 21,
+          "weight": 19,
           "name": "minecraft:stone_axe"
         },
         {
           "type": "minecraft:item",
-          "weight": 19,
+          "weight": 17,
           "name": "minecraft:stone_sword"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 7,
+          "name": "minecraft:iron_sword",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 7
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 9,
+          "name": "minecraft:iron_axe"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 9,
+          "name": "minecraft:iron_sword"
         }
       ]
     },
@@ -159,7 +180,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 10,
+          "weight": 20,
           "name": "minecraft:crossbow",
           "functions": [
             {
@@ -170,7 +191,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 11,
+          "weight": 16,
           "name": "minecraft:bow",
           "functions": [
             {
@@ -181,12 +202,12 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 6,
+          "weight": 10,
           "name": "minecraft:crossbow"
         },
         {
           "type": "minecraft:empty",
-          "weight": 60
+          "weight": 35
         },
         {
           "type": "minecraft:item",
@@ -251,11 +272,11 @@
       "entries": [
         {
           "type": "minecraft:empty",
-          "weight": 50
+          "weight": 60
         },
         {
           "type": "minecraft:item",
-          "weight": 50,
+          "weight": 40,
           "name": "minecraft:firework_rocket",
           "functions": [
             {
