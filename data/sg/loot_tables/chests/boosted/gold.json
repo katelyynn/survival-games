@@ -251,11 +251,11 @@
       "entries": [
         {
           "type": "minecraft:empty",
-          "weight": 85
+          "weight": 50
         },
         {
           "type": "minecraft:item",
-          "weight": 15,
+          "weight": 50,
           "name": "minecraft:firework_rocket",
           "functions": [
             {
