@@ -1,6 +1,10 @@
 # SG main loop
 
 
+# set gamemode
+## for servers with default gamemodes
+gamemode adventure @a[gamemode=survival]
+
 # welcome notice
 ## appears when game is not in progress
 ## is disabled in realms mode
