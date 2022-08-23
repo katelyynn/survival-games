@@ -15,7 +15,7 @@ team leave @a
 tp @a 0 315 0 0 0
 
 # announce
-tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"!","color":"green","bold":true},{"text":"] ","color":"dark_gray"},{"text":"Game over!","color":"yellow"}]
+tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"♦","color":"green","bold":true},{"text":"] ","color":"dark_gray"},{"text":"Returned to the lobby!","color":"aqua"}]
 # sfx
 execute as @a at @s run playsound entity.arrow.hit_player player @s ~ ~ ~ 100 0.5
 
