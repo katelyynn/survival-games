@@ -22,7 +22,7 @@ execute as @a[gamemode=adventure] at @s run summon firework_rocket ~ ~1 ~ {Firew
 # announce
 tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"✔","color":"green","bold":true},{"text":"] ","color":"dark_gray"},{"text":"Game over!","color":"aqua"}]
 # sfx
-execute as @a at @s run playsound entity.arrow.hit_player player @s ~ ~ ~ 100 0.5
+playsound entity.arrow.hit_player player @s ~ ~ ~ 100 0.5
 
 # display own kills
 tellraw @s ["",{"text":"[","color":"dark_gray"},{"text":"⭐","color":"gold"},{"text":"] ","color":"dark_gray"},{"text":"You got ","color":"gray"},{"score":{"name":"@s","objective":"kills"},"color":"green"},{"text":" kills this round.","color":"gray"}]
