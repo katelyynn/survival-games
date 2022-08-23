@@ -22,7 +22,7 @@ execute store result score border_x internal run data get entity @e[tag=borderce
 execute store result score border_z internal run data get entity @e[tag=bordercentre,tag=temp,limit=1] Pos[2]
 
 # announce
-tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"!","color":"red","bold":true},{"text":"] ","color":"dark_gray"},{"text":"The border is closing in on ","color":"gray"},{"score":{"name":"border_x","objective":"internal"},"color":"red"},{"text":", ","color":"gray"},{"score":{"name":"border_z","objective":"internal"},"color":"red"}]
+tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"⚠","color":"red"},{"text":"] ","color":"dark_gray"},{"text":"The border is closing in on ","color":"gray"},{"score":{"name":"border_x","objective":"internal"},"color":"red"},{"text":", ","color":"gray"},{"score":{"name":"border_z","objective":"internal"},"color":"red"}]
 # sfx
 execute as @a at @s run playsound minecraft:block.note_block.bass player @s
 
