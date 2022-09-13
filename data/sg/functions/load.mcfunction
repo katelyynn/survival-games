@@ -12,6 +12,7 @@ scoreboard objectives add spectator_height dummy
 
 # track player leave
 scoreboard objectives add player_leave minecraft.custom:minecraft.leave_game
+scoreboard objectives add player_leave.time dummy
 
 # teams
 ## red
