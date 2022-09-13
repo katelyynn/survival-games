@@ -10,6 +10,9 @@ scoreboard objectives add kills playerKillCount
 # track spectator height
 scoreboard objectives add spectator_height dummy
 
+# track player leave
+scoreboard objectives add player_leave minecraft.custom:minecraft.leave_game
+
 # teams
 ## red
 team add red
