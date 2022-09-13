@@ -23,6 +23,9 @@ execute if score realms global matches 1.. if score period internal matches -1 r
 ## used for marking custom items
 execute if score debug internal matches 1 run function sg:system/debug
 
+# track player leave
+execute as @a if score @s player_leave matches 1.. run function sg:system/leave/go
+
 # custom items
 function sg:summon/main
 
