@@ -1,5 +1,5 @@
 # SG win
-## return to lobby
+## transition to lobby
 
 
 effect clear @a
@@ -15,7 +15,7 @@ team leave @a
 tp @a 0 315 0 0 0
 
 # announce
-tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"♦","color":"green","bold":true},{"text":"] ","color":"dark_gray"},{"text":"Returned to the lobby!","color":"aqua"}]
+tellraw @a ["",{"text":"[","color":"dark_gray"},{"text":"→","color":"gray"},{"text":"] ","color":"dark_gray"},{"text":"Returned to the lobby!","color":"gray"}]
 # sfx
 execute as @a at @s run playsound entity.arrow.hit_player player @s ~ ~ ~ 100 0.5
 

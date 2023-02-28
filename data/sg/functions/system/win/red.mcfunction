@@ -37,5 +37,5 @@ playsound entity.arrow.hit_player player @s ~ ~ ~ 100 0.5
 tellraw @s ["",{"text":"[","color":"dark_gray"},{"text":"⭐","color":"gold"},{"text":"] ","color":"dark_gray"},{"text":"You got ","color":"gray"},{"score":{"name":"@s","objective":"kills"},"color":"green"},{"text":" kills this round.","color":"gray"}]
 
 
-# return to lobby
+# transition to lobby
 schedule function sg:lobby 5s
