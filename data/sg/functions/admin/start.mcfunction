@@ -34,7 +34,7 @@ execute as @a at @s run playsound entity.generic.explode player @s ~ ~ ~
 effect clear @a
 ## particles
 execute as @e[tag=spawn] at @s run particle minecraft:glow ~ ~ ~ 0 0 0 1 10
-execute as @e[tag=rating] at @s run particle minecraft:glow ~ ~-2 ~ 0 0 0 1 10
+execute as @e[tag=chest_tier] at @s run particle minecraft:glow ~ ~-2 ~ 0 0 0 1 10
 
 execute as @e[tag=copyblock] at @s run clone ~ ~ ~ ~ ~ ~ ~ ~100 ~
 
