@@ -7,7 +7,7 @@
 
 host your very own survival games in minecraft! featuring supply crates, custom world border movement,
 in-built loot tables with a range of tiers, spawn mechanics, and a fun time!! if you're looking for a
-map that natively uses this, [here - have some fun!](https://gsot.plexion.dev/library/survivalgamesmap)
+map that natively uses this, [here - have some fun!](https://planetminecraft.com/project/gsot-survival-games/)
 
 ## integration
 
